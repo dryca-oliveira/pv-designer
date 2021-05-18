@@ -4,7 +4,7 @@
       <v-row justify="center">
         <v-col
           class="text-center text-sm-left text-caption d-flex align-center"
-          cols="6"
+          cols="4"
           sm="6"
         >
           <a href="#home">

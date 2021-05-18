@@ -1,19 +1,26 @@
 <template>
-  <v-container v-scroll="onScroll" fluid id="clients">
+  <v-row v-scroll="onScroll" id="clients">
     <v-container style="max-width: 1250px">
       <v-row
-        class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center"
+        class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center areaTitle"
       >
-        <v-col cols="12" sm="9" md="4">
+        <v-col cols="12" sm="9" md="5" lg="4">
           <transition name="fadeInRight">
             <div v-if="show" class="font-title font-weight-bold">
               Nossos clientes
             </div>
           </transition>
-          <div v-if="!show" style="height: 300px"></div>
+          <div v-if="!show" class="show"></div>
         </v-col>
         <transition name="fadeInLeft">
-          <v-col v-if="show" cols="12" sm="3" md="7" class="text-sm-right">
+          <v-col
+            v-if="show"
+            cols="12"
+            sm="3"
+            md="6"
+            lg="7"
+            class="text-sm-right"
+          >
             <v-icon color="#F7B11D">fas fa-star </v-icon>
             <v-icon color="#F7B11D">fas fa-star </v-icon>
             <v-icon color="#F7B11D">fas fa-star </v-icon>
@@ -28,7 +35,11 @@
         </v-col>
         <v-col cols="8" sm="10">
           <VueSlickCarousel ref="carousel" v-bind="settings">
-            <div class="teste" v-for="(item, index) in brands" :key="index">
+            <div
+              class="paddingCard"
+              v-for="(item, index) in brands"
+              :key="index"
+            >
               <div class="bg mx-1 pa-5">
                 <v-img width="268" height="184" contain :src="item.src">
                 </v-img>
@@ -43,7 +54,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-container>
+  </v-row>
 </template>
 
 <script >
@@ -127,7 +138,7 @@ export default {
 }
 .fadeInRight-enter-active,
 .fadeInRight-leave-active {
-  transition: all 1.5s ease-in;
+  transition: transform 1.9s ease-in;
 }
 .fadeInRight-enter {
   transform: translate3d(-260px, 0, 0);
@@ -135,12 +146,12 @@ export default {
 
 .fadeInLeft-enter-active,
 .fadeInLeft-leave-active {
-  transition: all 1.5s ease-in;
+  transition: transform 1.9s ease-in;
 }
 .fadeInLeft-enter {
   transform: translate3d(260px, 0, 0);
 }
-.teste {
+.paddingCard {
   padding: 10px;
 }
 .bg {
@@ -154,9 +165,27 @@ export default {
 .paddingTop {
   padding-top: 67px;
 }
+.show {
+  height: 300px;
+}
 
 /* mobile */
 @media screen and (max-width: 600px) {
+  .fadeInRight-enter-active,
+  .fadeInRight-leave-active {
+    transition: transform 2.5s ease-in;
+  }
+  .fadeInRight-enter {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  .fadeInLeft-enter-active,
+  .fadeInLeft-leave-active {
+    transition: transform 2.5s ease-in;
+  }
+  .fadeInLeft-enter {
+    transform: translate3d(0, 40px, 0);
+  }
   #clients {
     padding-top: 10px;
     padding-bottom: 40px;
@@ -167,5 +196,20 @@ export default {
   .paddingTop {
     padding-top: 0px;
   }
+  .show {
+    height: 100px;
+  }
+}
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .font-title {
+    padding-left: 20px;
+  }
+}
+/* leptop */
+@media screen and (min-width: 961px) and (max-width: 1264px) {
+}
+/* desktop */
+@media screen and (min-width: 1265px) {
 }
 </style>>

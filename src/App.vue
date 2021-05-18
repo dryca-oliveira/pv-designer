@@ -5,12 +5,14 @@
     </v-app-bar>
 
     <v-main v-scroll="onScroll">
-      <Banner />
-      <About />
-      <Projects />
-      <Services />
-      <Clients />
-      <Contact />
+      <v-container fluid>
+        <Banner />
+        <About />
+        <Projects />
+        <Services />
+        <Clients />
+        <Contact />
+      </v-container>
     </v-main>
     <footer>
       <Footer />
@@ -44,17 +46,18 @@ export default {
 
   data: () => ({
     color: "#1f1f1f",
-    height: "60px",
+    height: "70px",
   }),
 
   methods: {
     onScroll() {
       let logoImg = document.querySelector(".logo-img");
       let btnMenu = document.querySelector(".btnMenu");
+
       if (window.scrollY > 50) {
         this.color = "#1f1f1fd0";
         this.show = true;
-        this.height = "60px";
+        this.height = "54px";
         logoImg.style.width = "30px";
         btnMenu.style.width = "30px";
         btnMenu.style.height = "30px";
@@ -62,6 +65,7 @@ export default {
         this.color = "#1f1f1f";
         this.show = false;
         this.height = "70px";
+
         logoImg.style.width = "40px";
         btnMenu.style.width = "40px";
         btnMenu.style.height = "40px";
@@ -80,5 +84,8 @@ body {
 }
 #app {
   font-family: "Montserrat", sans-serif !important;
+}
+.teste {
+  margin-top: ;
 }
 </style>

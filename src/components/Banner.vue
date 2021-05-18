@@ -1,54 +1,56 @@
 <template>
-  <v-container id="home" class="pa-0" fluid>
-    <v-container fluid class="controls">
-      <v-row>
-        <v-col cols="6">
-          <v-btn elevation="0" @click="showNext" fab x-small color="#f1f1f13f"
-            ><v-icon color="#f1f1f1"> fas fa-chevron-left </v-icon>
-          </v-btn>
-        </v-col>
-        <v-col class="text-right" cols="6">
-          <v-btn elevation="0" @click="showPrev" fab x-small color="#f1f1f13f"
-            ><v-icon color="#f1f1f1"> fas fa-chevron-right </v-icon>
-          </v-btn>
-        </v-col>
-      </v-row>
-    </v-container>
+  <v-row id="home">
+    <v-col cols="12" class="pa-0 purple">
+      <v-container fluid class="controls">
+        <v-row>
+          <v-col cols="6">
+            <v-btn elevation="0" @click="showNext" fab x-small color="#f1f1f13f"
+              ><v-icon color="#f1f1f1"> fas fa-chevron-left </v-icon>
+            </v-btn>
+          </v-col>
+          <v-col class="text-right" cols="6">
+            <v-btn elevation="0" @click="showPrev" fab x-small color="#f1f1f13f"
+              ><v-icon color="#f1f1f1"> fas fa-chevron-right </v-icon>
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-container>
 
-    <VueSlickCarousel ref="carousel" v-bind="settings">
-      <div v-for="(item, index) in images" :key="index">
-        <v-img
-          class="altura grey darken-4"
-          :src="item.src"
-          :lazy-src="item.src"
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-          <v-container class="bannercard">
-            <v-row class="justify-center justify-lg-start">
-              <v-col class="" cols="7">
-                <div class="title font-weight-medium">
-                  {{ item.title }}
-                </div>
+      <VueSlickCarousel ref="carousel" v-bind="settings">
+        <div v-for="(item, index) in images" :key="index">
+          <v-img
+            class="heightImage grey darken-4"
+            :src="item.src"
+            :lazy-src="item.src"
+          >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+            <v-container class="bannercard">
+              <v-row class="justify-center justify-lg-start">
+                <v-col class="" cols="7">
+                  <div class="title font-weight-medium">
+                    {{ item.title }}
+                  </div>
 
-                <div v-if="item.btn">
-                  <v-btn dark color="#1f22fd" class="bannerBtn"
-                    >Veja mais</v-btn
-                  >
-                </div>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-img>
-      </div>
-    </VueSlickCarousel>
-  </v-container>
+                  <div v-if="item.btn">
+                    <v-btn dark color="#1f22fd" class="bannerBtn"
+                      >Veja mais</v-btn
+                    >
+                  </div>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-img>
+        </div>
+      </VueSlickCarousel>
+    </v-col>
+  </v-row>
 </template>
 
 <script >
@@ -68,7 +70,7 @@ export default {
         focusOnSelect: true,
         infinite: true,
         autoplay: true,
-        speed: 300,
+        autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
         touchThreshold: 5,
@@ -107,9 +109,11 @@ export default {
 #home {
   position: relative;
   max-height: 690px;
-  font-family: "Montserrat", sans-serif !important;
 }
-.altura {
+.slick-slider {
+  margin-bottom: -10px;
+}
+.heightImage {
   max-height: 690px;
   height: 100%;
 }
@@ -144,11 +148,11 @@ export default {
 /* mobile */
 @media screen and (max-width: 600px) {
   #banner {
-    max-height: 130px;
+    max-height: 200px;
     height: 100%;
   }
-  .altura {
-    max-height: 130px;
+  .heightImage {
+    max-height: 200px;
   }
   .bannercard {
     margin-top: 5%;
@@ -166,12 +170,29 @@ export default {
 }
 /* tablet */
 @media screen and (min-width: 601px) and (max-width: 960px) {
+  #banner {
+    height: 50vh;
+    height: 100%;
+  }
+  .heightImage {
+    max-height: 680px;
+    height: 100%;
+  }
   .bannercard {
     margin-top: 10%;
   }
   .bannerBtn {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .title {
+    font-size: 30px !important;
+  }
+  .bannerBtn {
+    width: 100px;
+    height: 30px !important;
+    font-size: 10px;
+    margin-top: 10px;
   }
 }
 /* leptop */

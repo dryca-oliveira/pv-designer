@@ -1,56 +1,55 @@
 <template>
-  <v-container id="projects" class="pa-0" fluid>
-    <v-row v-if="show" class="padding">
-      <v-col class="d-flex justify-center" cols="12">
-        <ul class="filters d-flex">
-          <li v-on:click="setFilter('ALL')" class="active">Todos</li>
-          <li v-on:click="setFilter('LOGO')">Logo</li>
-        </ul>
-      </v-col>
-    </v-row>
+  <v-row id="projects">
+    <v-col cols="12" class="px-0 pt-0 pb-0">
+      <ul class="filters d-none d-sm-flex">
+        <li v-on:click="setFilter('ALL')" class="active">Todos</li>
+        <span>/</span>
+        <li v-on:click="setFilter('LOGO')">Logo</li>
+      </ul>
 
-    <transition-group class="projects" name="projects">
-      <template v-for="(project, index) in projects">
-        <div
-          :key="index"
-          class="project"
-          v-if="currentFilter === project.category || currentFilter === 'ALL'"
-        >
-          <div class="project-image-wrapper">
-            <v-hover v-slot="{ hover }">
-              <v-img
-                class="grey darken-4 project-image"
-                :lazy-src="project.image"
-                :src="project.image"
-              >
-                <template v-slot:placeholder>
-                  <v-row
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                  >
-                    <v-progress-circular
-                      indeterminate
-                      color="grey lighten-5"
-                    ></v-progress-circular>
-                  </v-row>
-                </template>
-                <div
-                  v-if="hover"
-                  class="d-flex v-card--reveal display-3 white--text"
-                  style="height: 100%"
+      <transition-group class="projects" name="projects">
+        <template v-for="(project, index) in projects">
+          <div
+            :key="index"
+            class="project"
+            v-if="currentFilter === project.category || currentFilter === 'ALL'"
+          >
+            <div class="project-image-wrapper">
+              <v-hover v-slot="{ hover }">
+                <v-img
+                  class="grey darken-4 project-image"
+                  :lazy-src="project.image"
+                  :src="project.image"
                 >
-                  <div class="category px-7">
-                    {{ project.category }}
+                  <template v-slot:placeholder>
+                    <v-row
+                      class="fill-height ma-0"
+                      align="center"
+                      justify="center"
+                    >
+                      <v-progress-circular
+                        indeterminate
+                        color="grey lighten-5"
+                      ></v-progress-circular>
+                    </v-row>
+                  </template>
+                  <div
+                    v-if="hover"
+                    class="d-flex v-card--reveal display-3 white--text"
+                    style="height: 100%"
+                  >
+                    <div class="category px-7">
+                      {{ project.category }}
+                    </div>
                   </div>
-                </div>
-              </v-img>
-            </v-hover>
+                </v-img>
+              </v-hover>
+            </div>
           </div>
-        </div>
-      </template>
-    </transition-group>
-  </v-container>
+        </template>
+      </transition-group>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -100,14 +99,7 @@ export default {
       ],
     };
   },
-  created() {
-    let width = screen.width;
-    if (width > 600) {
-      this.show = true;
-    } else {
-      this.show = false;
-    }
-  },
+
   methods: {
     setFilter: function (filter) {
       this.currentFilter = filter;
@@ -129,17 +121,20 @@ export default {
   padding-top: 81px;
   padding-bottom: 83px;
 }
+.filters {
+  padding-top: 81px;
+  padding-bottom: 83px;
+  font-size: 32px;
+  justify-content: center;
+  margin-left: -60px;
+}
 .filters li {
   list-style: none;
   color: #1f1f1f;
   font-weight: bold;
-  font-size: 26px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 0px 10px;
 }
-.filters li:first-child {
-  border-right: 2px solid #1f22fc;
-}
+
 .filters li:hover,
 .filters li.active {
   cursor: pointer;

@@ -1,43 +1,40 @@
 <template>
-  <v-container id="about" fluid>
-    <v-row>
-      <v-col class="pa-0" cols="12" md="6">
-        <v-img
-          class="imagem"
-          lazy-src="@/media/about.jpg"
-          src="@/media/about.jpg"
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-      <v-col cols="12" md="6">
-        <v-row class="padding" style="max-width: 575px">
-          <v-col class="title" cols="12">
-            Desenvolvimento <br />
-            de marcas focado no DNA da sua empresa
-          </v-col>
-          <v-col class="text" cols="12">
-            Olá, sou Paulo Vitor, possuo uma experiência como designer com mais
-            de 7 anos de mercado, especializado em marcas. Das diversas áreas
-            que a publicidade me proporcionou, me encontrei no designer gráfio.
-            já trabalhei em algumas empresas a nível Brasil onde aprendi e
-            desenvolvi minhas habilidades e ajudo empresas a alcançarem seus
-            objtivos.
-          </v-col>
-          <v-col class="pt-0 paddingButton" cols="12">
-            <v-btn class="aboutBtn" color="#fff">Veja mais </v-btn>
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-row id="about" style="background-color: #1f22fd">
+    <v-col class="pa-0" cols="12" md="6">
+      <v-img
+        class="imagem"
+        lazy-src="@/media/about.jpg"
+        src="@/media/about.jpg"
+      >
+        <template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            ></v-progress-circular>
+          </v-row>
+        </template>
+      </v-img>
+    </v-col>
+    <v-col cols="12" md="6">
+      <v-row class="padding" style="max-width: 575px">
+        <v-col class="title" cols="12">
+          Desenvolvimento <br />
+          de marcas focado no DNA da sua empresa
+        </v-col>
+        <v-col class="text" cols="12">
+          Olá, sou Paulo Vitor, possuo uma experiência como designer com mais de
+          7 anos de mercado, especializado em marcas. Das diversas áreas que a
+          publicidade me proporcionou, me encontrei no designer gráfio. já
+          trabalhei em algumas empresas a nível Brasil onde aprendi e desenvolvi
+          minhas habilidades e ajudo empresas a alcançarem seus objtivos.
+        </v-col>
+        <v-col class="pt-0 paddingButton" cols="12">
+          <v-btn class="aboutBtn" color="#fff">Veja mais </v-btn>
+        </v-col>
+      </v-row>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -48,7 +45,6 @@ export default {};
 #about {
   background-color: #1f22fd;
   color: #fff;
-  margin-top: -10px;
 }
 
 .title {
@@ -80,12 +76,12 @@ export default {};
   .title {
     font-weight: 900;
     font-size: 26px !important;
-    line-height: 28px;
+    line-height: 32px;
     margin-top: 50px;
   }
   .padding {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 24px !important;
+    padding-right: 20px !important;
   }
   .text {
     font-size: 16px !important;
