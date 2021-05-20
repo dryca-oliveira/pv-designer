@@ -29,7 +29,7 @@
             </template>
             <v-container class="bannercard">
               <v-row class="justify-center justify-lg-start">
-                <v-col class="" cols="7" md="8" lg="7">
+                <v-col class="pb-0" cols="8" md="8" lg="7">
                   <div class="title font-weight-medium">
                     {{ item.title }}
                   </div>
@@ -144,7 +144,7 @@ export default {
 /* mobile */
 @media screen and (max-width: 600px) {
   .bannercard {
-    margin-top: 5%;
+    margin-top: 1%;
   }
   .title {
     font-size: 20px !important;
