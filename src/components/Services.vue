@@ -3,11 +3,11 @@
     <v-col cols="12" class="px-0 py-0">
       <v-container style="max-width: 1150px">
         <v-row
-          class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center pa-0 areaTitle"
+          class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center px-4 px-lg-0"
         >
-          <v-col class="pa-0" cols="12" sm="9" md="9" lg="8">
+          <v-col class="pa-0" cols="12" sm="9" md="8" lg="8">
             <transition name="fadeInRight">
-              <div v-if="show" class="font-title font-weight-bold pb-3">
+              <div v-if="show" class="font-title font-weight-bold pb-lg-6">
                 O que podemos fazer por você
               </div>
             </transition>
@@ -25,27 +25,41 @@
               v-if="show"
               cols="12"
               sm="3"
-              md="3"
+              md="4"
               lg="4"
-              class="text-sm-right"
+              class="text-sm-right pr-md-4 pr-lg-0 pt-md-6"
             >
-              <v-icon color="#F7B11D">fas fa-star </v-icon>
-              <v-icon color="#F7B11D">fas fa-star </v-icon>
-              <v-icon color="#F7B11D">fas fa-star </v-icon>
+              <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
+              <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
+              <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
             </v-col>
           </transition>
         </v-row>
 
-        <v-row>
+        <v-row class="px-4 px-lg-0">
           <v-col
-            :class="{ bordaBottom: item.bordabottom, bb0: item.bb0 }"
-            class="pa-0 bb"
+            :class="{
+              bordaBottom: item.bordabottom,
+              bb0: item.bb0,
+              smbb: item.smbb,
+            }"
+            class="pa-0 bb cards"
             cols="12"
-            sm="4"
+            sm="6"
+            md="4"
             v-for="(item, index) in items"
             :key="index"
           >
-            <div :class="{ bordaxy: item.borda }" class="my-10 px-5">
+            <div
+              :class="{
+                bordaxy: item.borda,
+                smbRnone: item.smbRnone,
+                smbLnone: item.smbLnone,
+                smbL: item.smbL,
+                plNone: item.plNone,
+              }"
+              class="my-8 px-5"
+            >
               <v-hover close-delay="100" open-delay="200">
                 <template v-slot:default="{ hover }">
                   <v-card
@@ -57,8 +71,8 @@
                     <div class="icone">
                       <v-icon color="#fff">{{ item.icon }} </v-icon>
                     </div>
-                    <div class="titulo pt-3">{{ item.title }}</div>
-                    <div class="texto pt-3">{{ item.text }}</div>
+                    <div class="titulo py-5">{{ item.title }}</div>
+                    <div style="width: 251px">{{ item.text }}</div>
                   </v-card>
                 </template>
               </v-hover>
@@ -80,42 +94,48 @@ export default {
         icon: "fas fa-pencil-ruler",
         title: "design gráfico",
         text:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, velit debitis, incidunt dolor dolores maxime atque eligendi animi voluptates in vero modi distinctio?",
+          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
         bordabottom: true,
+        plNone: true,
       },
       {
         icon: "fas fa-network-wired",
         title: "redes sociais",
         text:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, velit debitis, incidunt dolor dolores maxime atque eligendi animi voluptates in vero modi distinctio?",
+          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
         bordabottom: true,
         borda: true,
+        smbRnone: true,
       },
       {
         icon: "fas fa-video",
         title: "ediçao de vídeo",
         text:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, velit debitis, incidunt dolor dolores maxime atque eligendi animi voluptates in vero modi distinctio?",
+          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
         bordabottom: true,
       },
       {
         icon: "fas fa-fingerprint",
         title: "identidade visual",
         text:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, velit debitis, incidunt dolor dolores maxime atque eligendi animi voluptates in vero modi distinctio?",
+          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
+        smbb: true,
+        smbL: true,
+        plNone: true,
       },
       {
         icon: "fab fa-internet-explorer",
         title: "criação de sites",
         text:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, velit debitis, incidunt dolor dolores maxime atque eligendi animi voluptates in vero modi distinctio?",
+          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
         borda: true,
+        smbLnone: true,
       },
       {
         icon: "fas fa-church",
         title: "gospel",
         text:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, velit debitis, incidunt dolor dolores maxime atque eligendi animi voluptates in vero modi distinctio?",
+          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
         bb0: true,
       },
     ],
@@ -148,7 +168,7 @@ export default {
 }
 #services {
   padding-top: 120px;
-  padding-bottom: 137px;
+  padding-bottom: 46px;
   overflow: hidden;
 }
 .font-title {
@@ -184,10 +204,6 @@ export default {
   border-bottom: 1px solid #c4c4c4;
 }
 
-.areaTitle {
-  padding-left: 20px !important;
-  padding-right: 16px !important;
-}
 .show {
   height: 300px;
   background-color: rgb(11, 184, 54);
@@ -223,25 +239,31 @@ export default {
   .bb {
     border-bottom: 1px solid #c4c4c4;
   }
-  .v-application .my-10 {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
-  }
+
   .bb0 {
     border-bottom: none;
-  }
-  .font-subtitle {
-    padding-left: 20px;
   }
 }
 /* tablet */
 @media screen and (min-width: 601px) and (max-width: 960px) {
+  #services {
+    padding-top: 30px;
+    max-height: none;
+  }
   .font-title {
     font-size: 30px;
   }
-  .areaTitle {
-    padding-left: 30px !important;
-    padding-right: 16px !important;
+  .smbb {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .smbLnone {
+    border-left: none;
+  }
+  .smbRnone {
+    border-right: none;
+  }
+  .smbL {
+    border-left: 1px solid #c4c4c4 !important;
   }
 }
 /* leptop */
@@ -253,16 +275,20 @@ export default {
   .font-title {
     font-size: 38px;
   }
-  .areaTitle {
-    padding-left: 30px !important;
-    padding-right: 16px !important;
+  .cards {
+    max-width: 300px;
+  }
+  .plNone {
+    padding-left: 0px !important;
   }
 }
 /* desktop */
 @media screen and (min-width: 1264px) and (max-width: 1904px) {
-  #services {
-    padding-top: 120px;
-    padding-bottom: 100px;
+  .cards {
+    max-width: 360px;
+  }
+  .plNone {
+    padding-left: 0px !important;
   }
 }
 /* extra large */

@@ -40,7 +40,7 @@ export default {};
 
 <style scoped>
 #footer {
-  padding: 50px 0px;
+  padding: 27.5px 0px;
 }
 a {
   text-decoration: none;

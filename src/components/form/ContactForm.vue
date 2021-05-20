@@ -68,7 +68,7 @@ export default {};
 }
 .form {
   padding-top: 108px;
-  padding-bottom: 108px;
+  padding-bottom: 56px;
 }
 /* mobile */
 @media screen and (max-width: 600px) {

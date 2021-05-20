@@ -1,6 +1,6 @@
 <template>
   <v-row id="home">
-    <v-col cols="12" class="pa-0 purple">
+    <v-col cols="12" class="pa-0 grey darken-4">
       <v-container fluid class="controls">
         <v-row>
           <v-col cols="6">
@@ -18,11 +18,7 @@
 
       <VueSlickCarousel ref="carousel" v-bind="settings">
         <div v-for="(item, index) in images" :key="index">
-          <v-img
-            class="heightImage grey darken-4"
-            :src="item.src"
-            :lazy-src="item.src"
-          >
+          <v-img class="grey darken-4" :src="item.src" :lazy-src="item.src">
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular
@@ -33,7 +29,7 @@
             </template>
             <v-container class="bannercard">
               <v-row class="justify-center justify-lg-start">
-                <v-col class="" cols="7">
+                <v-col class="" cols="7" md="8" lg="7">
                   <div class="title font-weight-medium">
                     {{ item.title }}
                   </div>
@@ -69,7 +65,7 @@ export default {
         arrows: false,
         focusOnSelect: true,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -77,7 +73,7 @@ export default {
       },
       images: [
         {
-          title: "A ideia da marca vale mais que a própria marca",
+          title: "A ideia da marca vale mais que  a própria marca",
           src: require("../assets/banner-site.png"),
           btn: true,
         },
@@ -108,7 +104,7 @@ export default {
 <style scoped >
 #home {
   position: relative;
-  max-height: 690px;
+  overflow: hidden;
 }
 .slick-slider {
   margin-bottom: -10px;
@@ -147,18 +143,11 @@ export default {
 }
 /* mobile */
 @media screen and (max-width: 600px) {
-  #banner {
-    max-height: 200px;
-    height: 100%;
-  }
-  .heightImage {
-    max-height: 200px;
-  }
   .bannercard {
     margin-top: 5%;
   }
   .title {
-    font-size: 12px !important;
+    font-size: 20px !important;
     line-height: 20px;
   }
   .bannerBtn {
@@ -170,14 +159,6 @@ export default {
 }
 /* tablet */
 @media screen and (min-width: 601px) and (max-width: 960px) {
-  #banner {
-    height: 50vh;
-    height: 100%;
-  }
-  .heightImage {
-    max-height: 680px;
-    height: 100%;
-  }
   .bannercard {
     margin-top: 10%;
   }
@@ -200,8 +181,18 @@ export default {
   .bannercard {
     margin-top: 100px;
   }
+  .title {
+    font-size: 40px !important;
+  }
 }
+/* desktop */
 @media screen and (min-width: 1264px) and (max-width: 1904px) {
+  .bannercard {
+    margin-top: 15%;
+  }
+}
+/* extra large */
+@media screen and (min-width: 1905px) {
   .bannercard {
     margin-top: 15%;
   }

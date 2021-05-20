@@ -1,10 +1,11 @@
 <template>
   <v-row id="about" style="background-color: #1f22fd">
-    <v-col class="pa-0" cols="12" md="6">
+    <v-col class="pa-0" cols="12 " md="6">
       <v-img
         class="imagem"
         lazy-src="@/media/about.jpg"
         src="@/media/about.jpg"
+        max-height="798px"
       >
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
@@ -17,19 +18,19 @@
       </v-img>
     </v-col>
     <v-col cols="12" md="6">
-      <v-row class="padding" style="max-width: 575px">
-        <v-col class="title" cols="12">
+      <v-row class="padding ml-sm-16" style="max-width: 575px">
+        <v-col class="title pa-0" cols="12">
           Desenvolvimento <br />
           de marcas focado no DNA da sua empresa
         </v-col>
-        <v-col class="text" cols="12">
+        <v-col class="text px-0 pb-0" cols="12">
           Olá, sou Paulo Vitor, possuo uma experiência como designer com mais de
           7 anos de mercado, especializado em marcas. Das diversas áreas que a
           publicidade me proporcionou, me encontrei no designer gráfio. já
           trabalhei em algumas empresas a nível Brasil onde aprendi e desenvolvi
           minhas habilidades e ajudo empresas a alcançarem seus objtivos.
         </v-col>
-        <v-col class="pt-0 paddingButton" cols="12">
+        <v-col class="pt-0 pl-0 paddingButton" cols="12">
           <v-btn class="aboutBtn" color="#fff">Veja mais </v-btn>
         </v-col>
       </v-row>
@@ -51,7 +52,7 @@ export default {};
   font-weight: 900;
   font-size: 36px !important;
   line-height: 44px;
-  margin-top: 154px;
+  margin-top: 156px;
 }
 .text {
   font-weight: 500;
@@ -59,7 +60,8 @@ export default {};
   padding-top: 36px !important;
 }
 .paddingButton {
-  padding-top: 50px !important;
+  padding-top: 72px !important;
+  padding-bottom: 132px;
 }
 .padding {
   padding-left: 84px !important;
@@ -124,10 +126,10 @@ export default {};
 /* desktop */
 @media screen and (min-width: 1264px) and (max-width: 1904px) {
   #about {
-    height: 840px;
+    height: 798px;
   }
   .imagem {
-    height: 840px !important;
+    height: 798px;
   }
 }
 </style>

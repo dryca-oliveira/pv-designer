@@ -10,7 +10,7 @@
           sm="6"
         >
           <v-row class="white--text" style="max-width: 575px">
-            <v-col cols="12" class="pt-0">
+            <v-col cols="12" class="pt-0 pl-0">
               <div class="font-title" style="max-width: 340px">
                 Experimente <br />
                 um atentimento ainda mais eficiente. Só chamar a gente no
@@ -77,7 +77,7 @@ export default {
 .font-title {
   font-weight: 500;
   font-size: 32px;
-  line-height: 56px;
+  line-height: 51px;
   padding-top: 108px;
   padding-bottom: 50px;
 }

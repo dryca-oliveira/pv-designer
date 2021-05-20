@@ -85,7 +85,4 @@ body {
 #app {
   font-family: "Montserrat", sans-serif !important;
 }
-.teste {
-  margin-top: ;
-}
 </style>

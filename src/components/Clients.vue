@@ -2,9 +2,9 @@
   <v-row v-scroll="onScroll" id="clients">
     <v-container style="max-width: 1250px">
       <v-row
-        class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center areaTitle"
+        class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center"
       >
-        <v-col cols="12" sm="9" md="5" lg="4">
+        <v-col cols="12" sm="9" md="8" lg="4" class="pl-sm-4 py-0 px-lg-0">
           <transition name="fadeInRight">
             <div v-if="show" class="font-title font-weight-bold">
               Nossos clientes
@@ -17,13 +17,14 @@
             v-if="show"
             cols="12"
             sm="3"
-            md="6"
+            md="4"
             lg="7"
-            class="text-sm-right"
+            align-self="center"
+            class="text-sm-right pr-sm-4 pr-lg-0"
           >
-            <v-icon color="#F7B11D">fas fa-star </v-icon>
-            <v-icon color="#F7B11D">fas fa-star </v-icon>
-            <v-icon color="#F7B11D">fas fa-star </v-icon>
+            <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
+            <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
+            <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
           </v-col>
         </transition>
       </v-row>
@@ -202,12 +203,12 @@ export default {
 }
 /* tablet */
 @media screen and (min-width: 601px) and (max-width: 960px) {
-  .font-title {
-    padding-left: 20px;
-  }
 }
 /* leptop */
 @media screen and (min-width: 961px) and (max-width: 1264px) {
+  #clients {
+    padding-top: 60px;
+  }
 }
 /* desktop */
 @media screen and (min-width: 1265px) {

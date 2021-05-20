@@ -61,7 +61,7 @@ export default {
       projects: [
         {
           image: require("../media/img1.jpg"),
-          category: "LOGO",
+          category: "OUTROS",
         },
         {
           image: require("../media/img2.jpg"),
@@ -94,7 +94,7 @@ export default {
         },
         {
           image: require("../media/img9.jpg"),
-          category: "OUTROS",
+          category: "LOGO",
         },
       ],
     };
