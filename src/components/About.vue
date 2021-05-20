@@ -18,8 +18,8 @@
       </v-img>
     </v-col>
     <v-col cols="12" md="6">
-      <v-row class="padding ml-sm-16" style="max-width: 575px">
-        <v-col class="title pa-0" cols="12">
+      <v-row class="padding ml-sm-16" style="max-width: 516px">
+        <v-col class="title pa-0" cols="12" lg="10">
           Desenvolvimento <br />
           de marcas focado no DNA da sua empresa
         </v-col>
@@ -63,9 +63,7 @@ export default {};
   padding-top: 72px !important;
   padding-bottom: 132px;
 }
-.padding {
-  padding-left: 84px !important;
-}
+
 .aboutBtn {
   width: 222px;
   height: 54px !important;
