@@ -17,7 +17,7 @@
         </template>
       </v-img>
     </v-col>
-    <v-col cols="12" md="6">
+    <v-col cols="12" md="6" class="pl-lg-4">
       <v-row class="padding ml-sm-16" style="max-width: 516px">
         <v-col class="title pa-0" cols="12" lg="10">
           Desenvolvimento <br />
