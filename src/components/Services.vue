@@ -60,22 +60,13 @@
               }"
               class="my-8 px-5"
             >
-              <v-hover close-delay="100" open-delay="200">
-                <template v-slot:default="{ hover }">
-                  <v-card
-                    :class="{ dark: hover }"
-                    :color="hover ? '#F7B11D' : 'transparent'"
-                    :elevation="hover ? 20 : 0"
-                    class="pa-5 transition-swing"
-                  >
-                    <div class="icone">
-                      <v-icon color="#fff">{{ item.icon }} </v-icon>
-                    </div>
-                    <div class="titulo py-5">{{ item.title }}</div>
-                    <div style="width: 251px">{{ item.text }}</div>
-                  </v-card>
-                </template>
-              </v-hover>
+              <v-card color="transparent" class="pa-5" elevation="0">
+                <div class="icone">
+                  <v-icon color="#fff">{{ item.icon }} </v-icon>
+                </div>
+                <div class="titulo py-5">{{ item.title }}</div>
+                <div style="width: 251px">{{ item.text }}</div>
+              </v-card>
             </div>
           </v-col>
         </v-row>
@@ -192,10 +183,7 @@ export default {
   font-weight: bold;
   text-transform: uppercase;
 }
-.dark {
-  color: #fff !important;
-  cursor: default;
-}
+
 .bordaxy {
   border-left: 1px solid #c4c4c4;
   border-right: 1px solid #c4c4c4;
@@ -206,7 +194,6 @@ export default {
 
 .show {
   height: 300px;
-  background-color: rgb(11, 184, 54);
 }
 /* mobile */
 @media screen and (max-width: 600px) {

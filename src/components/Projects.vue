@@ -122,8 +122,8 @@ export default {
   padding-bottom: 83px;
 }
 .filters {
-  padding-top: 81px;
-  padding-bottom: 83px;
+  padding-top: 73px;
+  padding-bottom: 74px;
   font-size: 32px;
   justify-content: center;
   margin-left: -60px;

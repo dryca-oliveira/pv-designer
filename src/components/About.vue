@@ -49,6 +49,7 @@ export default {};
 }
 
 .title {
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 900;
   font-size: 36px !important;
   line-height: 44px;
@@ -69,6 +70,7 @@ export default {};
   height: 54px !important;
   font-weight: 500 !important;
   font-size: 16px;
+  text-transform: none !important;
   color: #1f22fd;
 }
 /* mobile */

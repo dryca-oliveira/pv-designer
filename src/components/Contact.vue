@@ -85,6 +85,7 @@ export default {
 .botao {
   width: 294px;
   height: 54px !important;
+  text-transform: none !important;
 }
 .subtitle {
   font-weight: 500;

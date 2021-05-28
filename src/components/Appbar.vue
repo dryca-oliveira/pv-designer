@@ -43,7 +43,7 @@
       </v-col>
       <!-- social Media -->
       <v-col
-        class="d-none d-sm-none d-md-flex justify-end pr-0"
+        class="d-none d-sm-none d-md-flex justify-center pr-0"
         cols="2"
         md="5"
       >

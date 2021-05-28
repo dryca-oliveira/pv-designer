@@ -136,6 +136,7 @@ export default {
 .bannerBtn {
   width: 198px;
   height: 54px !important;
+  text-transform: none !important;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;

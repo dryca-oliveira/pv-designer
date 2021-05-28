@@ -1,6 +1,6 @@
 <template>
-  <v-row v-scroll="onScroll" id="clients">
-    <v-container style="max-width: 1250px">
+  <v-row class="flex-column" v-scroll="onScroll" id="clients">
+    <v-container style="max-width: 1150px">
       <v-row
         class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center"
       >
@@ -28,22 +28,26 @@
           </v-col>
         </transition>
       </v-row>
+    </v-container>
+    <v-container style="max-width: 1390px">
       <v-row class="paddingTop" align="center">
         <v-col class="text-center" cols="2" sm="1">
           <v-btn @click="showNext" fab dark x-small color="#f1f1f1"
             ><v-icon dark> fas fa-chevron-left </v-icon>
           </v-btn>
         </v-col>
-        <v-col cols="8" sm="10">
-          <VueSlickCarousel ref="carousel" v-bind="settings">
+        <v-col class="px-0" cols="8" sm="10">
+          <VueSlickCarousel class="teste" ref="carousel" v-bind="settings">
             <div
-              class="paddingCard"
+              class="d-flex align-center justify-center px-2"
               v-for="(item, index) in brands"
               :key="index"
             >
-              <div class="bg mx-1 pa-5">
-                <v-img width="268" height="184" contain :src="item.src">
-                </v-img>
+              <div class="bg">
+                <div>
+                  <v-img width="158" height="80" contain :src="item.src">
+                  </v-img>
+                </div>
               </div>
             </div>
           </VueSlickCarousel>
@@ -70,7 +74,6 @@ export default {
   data() {
     return {
       show: false,
-      altura: "",
       settings: {
         arrows: false,
         focusOnSelect: true,
@@ -136,6 +139,7 @@ export default {
 #clients {
   padding-top: 149px;
   padding-bottom: 148px;
+  overflow: hidden;
 }
 .fadeInRight-enter-active,
 .fadeInRight-leave-active {
@@ -158,6 +162,11 @@ export default {
 .bg {
   border-radius: 8px;
   background-color: #f1f1f1;
+  height: 184px;
+  width: 268px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .font-title {
   font-weight: 500;

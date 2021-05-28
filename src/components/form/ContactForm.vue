@@ -10,23 +10,19 @@
           <v-col class="pt-0" cols="12">
             <v-text-field
               hide-details
-              label="Nome sobrenome"
+              label="Nome Sobrenome"
               solo
               style="width: 490px"
             ></v-text-field>
           </v-col>
           <v-col class="pt-0" cols="12">
-            <v-text-field
-              hide-details
-              label="email@email.com"
-              solo
-            ></v-text-field>
+            <v-text-field hide-details label="Seu E-mail" solo></v-text-field>
           </v-col>
           <v-col class="pt-0" cols="12">
-            <v-text-field hide-details label="telefone" solo></v-text-field>
+            <v-text-field hide-details label="Telefone" solo></v-text-field>
           </v-col>
           <v-col class="pt-0" cols="12">
-            <v-text-field hide-details label="assunto" solo></v-text-field>
+            <v-text-field hide-details label="Assunto" solo></v-text-field>
           </v-col>
 
           <v-col class="pt-0" cols="12">
@@ -35,11 +31,18 @@
               solo
               height="200"
               name="input-7-4"
-              label="*mensagem"
+              label="Mensagem"
             ></v-textarea>
           </v-col>
           <v-col class="pt-0 mt-0 pb-10" cols="12">
-            <v-btn style="width: 170px; height: 43px" color="#FAB013" dark
+            <v-btn
+              style="
+                width: 170px;
+                height: 43px;
+                text-transform: none !important;
+              "
+              color="#FAB013"
+              dark
               >Enviar</v-btn
             >
           </v-col>
