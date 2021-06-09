@@ -1,3 +1,4 @@
+
 <template>
   <v-app id="app">
     <v-app-bar :height="height" :color="color" fixed app dark elevation="0">
@@ -29,10 +30,8 @@ import Services from "./components/Services.vue";
 import Clients from "./components/Clients.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
-
 export default {
   name: "App",
-
   components: {
     Appbar,
     Banner,
@@ -43,17 +42,14 @@ export default {
     Contact,
     Footer,
   },
-
   data: () => ({
     color: "#1f1f1f",
     height: "70px",
   }),
-
   methods: {
     onScroll() {
       let logoImg = document.querySelector(".logo-img");
       let btnMenu = document.querySelector(".btnMenu");
-
       if (window.scrollY > 50) {
         this.color = "#1f1f1fd0";
         this.show = true;
@@ -65,7 +61,6 @@ export default {
         this.color = "#1f1f1f";
         this.show = false;
         this.height = "70px";
-
         logoImg.style.width = "40px";
         btnMenu.style.width = "40px";
         btnMenu.style.height = "40px";

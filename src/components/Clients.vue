@@ -2,9 +2,13 @@
   <v-row class="flex-column" v-scroll="onScroll" id="clients">
     <v-container style="max-width: 1150px">
       <v-row
-        class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center"
+        class="
+          flex-column-reverse flex-sm-row
+          text-center text-sm-left
+          justify-sm-center
+        "
       >
-        <v-col cols="12" sm="9" md="8" lg="4" class="pl-sm-4 py-0 px-lg-0">
+        <v-col cols="12" sm="9" md="8" lg="6" class="pl-sm-4 py-0 px-lg-0">
           <transition name="fadeInRight">
             <div v-if="show" class="font-title font-weight-bold">
               Nossos clientes
@@ -18,21 +22,33 @@
             cols="12"
             sm="3"
             md="4"
-            lg="7"
+            lg="6"
             align-self="center"
             class="text-sm-right pr-sm-4 pr-lg-0"
           >
-            <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
-            <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
-            <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
+            <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
+              >fas fa-star
+            </v-icon>
+            <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
+              >fas fa-star
+            </v-icon>
+            <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
+              >fas fa-star
+            </v-icon>
           </v-col>
         </transition>
       </v-row>
     </v-container>
     <v-container style="max-width: 1390px">
-      <v-row class="paddingTop" align="center">
+      <v-row class="pt-0 pt-sm-10" align="center">
         <v-col class="text-center" cols="2" sm="1">
-          <v-btn @click="showNext" fab dark x-small color="#f1f1f1"
+          <v-btn
+            @click="showNext"
+            fab
+            dark
+            x-small
+            elevation="0"
+            color="#c4c4c4"
             ><v-icon dark> fas fa-chevron-left </v-icon>
           </v-btn>
         </v-col>
@@ -53,7 +69,13 @@
           </VueSlickCarousel>
         </v-col>
         <v-col class="text-center" cols="2" sm="1">
-          <v-btn @click="showPrev" fab dark x-small color="#f1f1f1"
+          <v-btn
+            @click="showPrev"
+            fab
+            dark
+            x-small
+            elevation="0"
+            color="#c4c4c4"
             ><v-icon dark> fas fa-chevron-right </v-icon>
           </v-btn>
         </v-col>
@@ -78,6 +100,8 @@ export default {
         arrows: false,
         focusOnSelect: true,
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -137,8 +161,8 @@ export default {
 
 <style scoped >
 #clients {
-  padding-top: 149px;
-  padding-bottom: 148px;
+  padding-top: 120px;
+  padding-bottom: 130px;
   overflow: hidden;
 }
 .fadeInRight-enter-active,
@@ -170,11 +194,9 @@ export default {
 }
 .font-title {
   font-weight: 500;
-  font-size: 44px;
+  font-size: 40px;
 }
-.paddingTop {
-  padding-top: 67px;
-}
+
 .show {
   height: 300px;
 }
@@ -203,9 +225,7 @@ export default {
   .font-title {
     font-size: 26px;
   }
-  .paddingTop {
-    padding-top: 0px;
-  }
+
   .show {
     height: 100px;
   }

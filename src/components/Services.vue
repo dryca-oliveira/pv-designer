@@ -7,13 +7,13 @@
         >
           <v-col class="pa-0" cols="12" sm="9" md="8" lg="8">
             <transition name="fadeInRight">
-              <div v-if="show" class="font-title font-weight-bold pb-lg-6">
-                O que podemos fazer por você
+              <div v-if="show" class="font-title font-weight-bold pb-lg-3">
+                O que podemos fazer por você?
               </div>
             </transition>
             <div v-if="!show" style="height: 300px"></div>
 
-            <div class="text-left font-subtitle">
+            <div class="text-left font-subtitle pb-6">
               Estamos aqui para atender você nos mais varioados projetos.
               Conheça nossos principais serviços, estamos aqui para atender você
               nos mais variados projetos, serviços, estamos estamos aqui para
@@ -29,44 +29,102 @@
               lg="4"
               class="text-sm-right pr-md-4 pr-lg-0 pt-md-6"
             >
-              <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
-              <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
-              <v-icon class="pl-4" color="#F7B11D">fas fa-star </v-icon>
+              <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
+                >fas fa-star
+              </v-icon>
+              <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
+                >fas fa-star
+              </v-icon>
+              <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
+                >fas fa-star
+              </v-icon>
             </v-col>
           </transition>
         </v-row>
 
-        <v-row class="px-4 px-lg-0">
+        <v-row class="sm-bb py-sm-8 pb-md-10 pb-lg-11 pt-lg-16">
           <v-col
-            :class="{
-              bordaBottom: item.bordabottom,
-              bb0: item.bb0,
-              smbb: item.smbb,
-            }"
-            class="pa-0 bb cards"
+            class="px-4 py-8 bb pt-sm-0 pb-lg-4 pl-lg-0"
             cols="12"
-            sm="6"
-            md="4"
-            v-for="(item, index) in items"
-            :key="index"
+            sm="4"
+            md="3"
           >
-            <div
-              :class="{
-                bordaxy: item.borda,
-                smbRnone: item.smbRnone,
-                smbLnone: item.smbLnone,
-                smbL: item.smbL,
-                plNone: item.plNone,
-              }"
-              class="my-8 px-5"
-            >
-              <v-card color="transparent" class="pa-5" elevation="0">
-                <div class="icone">
-                  <v-icon color="#fff">{{ item.icon }} </v-icon>
-                </div>
-                <div class="titulo py-5">{{ item.title }}</div>
-                <div style="width: 251px">{{ item.text }}</div>
-              </v-card>
+            <div class="icone">
+              <v-icon color="#fff">fas fa-pencil-ruler</v-icon>
+            </div>
+            <div class="titulo pt-3">design gráfico</div>
+            <div class="texto pt-3">
+              "Folder, flyer, cartão de visita,pasta, papel timbrado,
+              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+            </div>
+          </v-col>
+          <v-col
+            class="px-4 py-8 bb pt-sm-0 sm-brl px-md-10 pb-lg-4 px-lg-16"
+            cols="12"
+            sm="4"
+          >
+            <div class="icone">
+              <v-icon color="#fff">fas fa-network-wired</v-icon>
+            </div>
+            <div class="titulo pt-3">redes sociais</div>
+            <div class="texto pt-3">
+              "Folder, flyer, cartão de visita,pasta, papel timbrado,
+              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+            </div>
+          </v-col>
+          <v-col
+            class="px-4 py-8 bb pt-sm-0 px-md-10 pb-lg-4 px-lg-16"
+            cols="12"
+            sm="4"
+          >
+            <div class="icone">
+              <v-icon color="#fff">fas fa-video</v-icon>
+            </div>
+            <div class="titulo pt-3">ediçao de vídeo</div>
+            <div class="texto pt-3">
+              "Folder, flyer, cartão de visita,pasta, papel timbrado,
+              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+            </div>
+          </v-col>
+        </v-row>
+
+        <v-row class="pt-sm-8 pt-md-10 pt-lg-11 pb-lg-15">
+          <v-col class="px-4 py-8 bb pt-sm-0 pl-lg-0" cols="12" sm="4" md="3">
+            <div class="icone">
+              <v-icon color="#fff">fas fa-fingerprint</v-icon>
+            </div>
+            <div class="titulo pt-3">identidade visual</div>
+            <div class="texto pt-3">
+              "Folder, flyer, cartão de visita,pasta, papel timbrado,
+              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+            </div>
+          </v-col>
+          <v-col
+            class="px-4 py-8 bb pt-sm-0 sm-brl px-md-10 pb-lg-0 px-lg-16"
+            cols="12"
+            sm="4"
+          >
+            <div class="icone">
+              <v-icon color="#fff">fab fa-chrome</v-icon>
+            </div>
+            <div class="titulo pt-3">criação de sites</div>
+            <div class="texto pt-3">
+              "Folder, flyer, cartão de visita,pasta, papel timbrado,
+              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+            </div>
+          </v-col>
+          <v-col
+            class="px-4 py-8 pt-sm-0 px-md-10 pb-lg-0 px-lg-16"
+            cols="12"
+            sm="4"
+          >
+            <div class="icone">
+              <v-icon color="#fff">fas fa-church</v-icon>
+            </div>
+            <div class="titulo pt-3">gospel</div>
+            <div class="texto pt-3">
+              "Folder, flyer, cartão de visita,pasta, papel timbrado,
+              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
             </div>
           </v-col>
         </v-row>
@@ -79,57 +137,6 @@
 export default {
   data: () => ({
     show: false,
-
-    items: [
-      {
-        icon: "fas fa-pencil-ruler",
-        title: "design gráfico",
-        text:
-          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
-        bordabottom: true,
-        plNone: true,
-      },
-      {
-        icon: "fas fa-network-wired",
-        title: "redes sociais",
-        text:
-          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
-        bordabottom: true,
-        borda: true,
-        smbRnone: true,
-      },
-      {
-        icon: "fas fa-video",
-        title: "ediçao de vídeo",
-        text:
-          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
-        bordabottom: true,
-      },
-      {
-        icon: "fas fa-fingerprint",
-        title: "identidade visual",
-        text:
-          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
-        smbb: true,
-        smbL: true,
-        plNone: true,
-      },
-      {
-        icon: "fab fa-internet-explorer",
-        title: "criação de sites",
-        text:
-          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
-        borda: true,
-        smbLnone: true,
-      },
-      {
-        icon: "fas fa-church",
-        title: "gospel",
-        text:
-          "Folder, flyer, cartão de visita,pasta, papel timbrado, outdoor,painel, uniforme, crachá,adesivo, revista, livro",
-        bb0: true,
-      },
-    ],
   }),
 
   methods: {
@@ -158,13 +165,14 @@ export default {
   transform: translate3d(130px, 0, 0);
 }
 #services {
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 46px;
   overflow: hidden;
 }
+
 .font-title {
   font-weight: 500;
-  font-size: 44px;
+  font-size: 40px;
 }
 .font-subtitle {
   font-size: 18px;
@@ -184,17 +192,17 @@ export default {
   text-transform: uppercase;
 }
 
-.bordaxy {
-  border-left: 1px solid #c4c4c4;
-  border-right: 1px solid #c4c4c4;
-}
-.bordaBottom {
-  border-bottom: 1px solid #c4c4c4;
-}
-
 .show {
   height: 300px;
 }
+.sm-bb {
+  border-bottom: 1px solid #c4c4c4;
+}
+.sm-brl {
+  border-right: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+}
+
 /* mobile */
 @media screen and (max-width: 600px) {
   .fadeInRight-enter-active,
@@ -218,17 +226,12 @@ export default {
   .font-title {
     font-size: 26px;
   }
-
-  .bordaxy {
-    border-left: none;
-    border-right: none;
-  }
   .bb {
     border-bottom: 1px solid #c4c4c4;
   }
-
-  .bb0 {
-    border-bottom: none;
+  .sm-brl {
+    border-right: none;
+    border-left: none;
   }
 }
 /* tablet */
@@ -239,18 +242,6 @@ export default {
   }
   .font-title {
     font-size: 30px;
-  }
-  .smbb {
-    border-bottom: 1px solid #c4c4c4;
-  }
-  .smbLnone {
-    border-left: none;
-  }
-  .smbRnone {
-    border-right: none;
-  }
-  .smbL {
-    border-left: 1px solid #c4c4c4 !important;
   }
 }
 /* leptop */
@@ -265,17 +256,11 @@ export default {
   .cards {
     max-width: 300px;
   }
-  .plNone {
-    padding-left: 0px !important;
-  }
 }
 /* desktop */
 @media screen and (min-width: 1264px) and (max-width: 1904px) {
   .cards {
-    max-width: 360px;
-  }
-  .plNone {
-    padding-left: 0px !important;
+    max-width: 340px;
   }
 }
 /* extra large */

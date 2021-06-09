@@ -66,9 +66,9 @@ export default {};
 }
 
 .aboutBtn {
-  width: 222px;
-  height: 54px !important;
-  font-weight: 500 !important;
+  width: 170px;
+  height: 50px !important;
+  font-weight: bold;
   font-size: 16px;
   text-transform: none !important;
   color: #1f22fd;

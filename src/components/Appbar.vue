@@ -2,8 +2,8 @@
   <v-container id="appbar" style="max-width: 1150px">
     <v-row class="text-center" justify="space-between">
       <!-- logo -->
-      <v-col class="d-flex align-center text-left pl-0" cols="4" md="2">
-        <a href="#home">
+      <v-col class="d-flex align-center text-left pl-0" cols="4" md="1">
+        <a href="#">
           <v-img
             alt="PV logo"
             class="shrink logo-img"
@@ -13,13 +13,19 @@
         /></a>
       </v-col>
       <!-- Menu -->
-      <v-col class="d-none d-sm-none d-md-flex menu pl-0" cols="4" md="5">
+      <v-col
+        class="d-none d-sm-none d-md-flex menu justify-end align-center px-0"
+        cols="4"
+        md="6"
+      >
         <nav>
           <ul class="pl-0">
-            <li class="pr-md-8 pr-lg-15"><a href="#about">Sobre</a></li>
+            <li class="pr-md-8 pr-lg-15">
+              <a href="#about">Sobre</a>
+            </li>
             <li class="pr-md-8 pr-lg-15"><a href="#projects">Portifólio</a></li>
             <li class="pr-md-8 pr-lg-15"><a href="#services">Serviços</a></li>
-            <li class="pr-md-4 pr-lg-8"><a href="#clients">Clientes</a></li>
+            <li class="pr-md-8 pr-lg-15"><a href="#clients">Clientes</a></li>
             <li><a href="#blog">Blog</a></li>
           </ul>
         </nav>
@@ -43,16 +49,20 @@
       </v-col>
       <!-- social Media -->
       <v-col
-        class="d-none d-sm-none d-md-flex justify-center pr-0"
+        class="d-none d-sm-none d-md-flex justify-end align-center pr-0"
         cols="2"
         md="5"
       >
-        <v-btn href="#contact" style="font-size: 10px" small color="primary">
-          Solicite um orçamento
+        <v-btn
+          href="#contact"
+          style="font-size: 14px; letter-spacing: 1px"
+          class="px-13 font-weight-bold"
+          small
+          color="#1F22FD"
+        >
+          Orçamento
         </v-btn>
-        <a class="social-media-icon pl-md-4 pl-lg-7" href="">
-          <i class="fab fa-whatsapp"></i>
-        </a>
+
         <a class="social-media-icon pl-md-4 pl-lg-7" href="">
           <i class="fab fa-instagram"></i>
         </a>
@@ -101,19 +111,19 @@
             <a class="social-media-icon pl-2" href="">
               <i class="fab fa-whatsapp"></i>
             </a>
-            <a class="social-media-icon" href="">
+            <a class="social-media-icon pl-2" href="">
               <i class="fab fa-instagram"></i>
             </a>
-            <a class="social-media-icon" href="">
+            <a class="social-media-icon pl-2" href="">
               <i class="fab fa-facebook-f"></i
             ></a>
-            <a class="social-media-icon" href="">
+            <a class="social-media-icon pl-2" href="">
               <i class="fab fa-behance"></i>
             </a>
-            <a class="social-media-icon" href="">
+            <a class="social-media-icon pl-2" href="">
               <i class="fab fa-dribbble"></i>
             </a>
-            <a class="social-media-icon" href="">
+            <a class="social-media-icon pl-2" href="">
               <i class="fab fa-pinterest-p"></i>
             </a>
           </v-col>

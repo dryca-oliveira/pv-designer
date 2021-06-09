@@ -117,13 +117,10 @@ export default {
     opacity: 0.9;
   }
 }
-.padding {
-  padding-top: 81px;
-  padding-bottom: 83px;
-}
+
 .filters {
-  padding-top: 73px;
-  padding-bottom: 74px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-size: 32px;
   justify-content: center;
   margin-left: -60px;

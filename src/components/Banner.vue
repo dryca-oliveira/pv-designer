@@ -29,13 +29,17 @@
             </template>
             <v-container class="bannercard">
               <v-row class="justify-center justify-lg-start">
-                <v-col class="pb-0" cols="8" md="8" lg="7">
-                  <div class="title font-weight-medium">
-                    {{ item.title }}
+                <v-col class="pb-0 pl-lg-0" cols="8" md="8" lg="7">
+                  <div class="title font-weight-black">
+                    {{ item.title }} <br />
+                    {{ item.subtitle }}
                   </div>
 
                   <div v-if="item.btn">
-                    <v-btn dark color="#1f22fd" class="bannerBtn"
+                    <v-btn
+                      dark
+                      color="#1f22fd"
+                      class="bannerBtn font-weight-bold"
                       >Veja mais</v-btn
                     >
                   </div>
@@ -73,7 +77,8 @@ export default {
       },
       images: [
         {
-          title: "A ideia da marca vale mais que  a própria marca",
+          title: "A ideia da marca vale mais ",
+          subtitle: "que a própria marca",
           src: require("../assets/banner-site.png"),
           btn: true,
         },
@@ -128,19 +133,18 @@ export default {
   margin-top: 244px;
 }
 .title {
-  font-weight: 500;
-  font-size: 44px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 40px !important;
   color: #fff;
-  line-height: 44px;
+  line-height: 54px;
 }
 .bannerBtn {
-  width: 198px;
-  height: 54px !important;
+  width: 170px;
+  height: 50px !important;
   text-transform: none !important;
-  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  margin-top: 58px;
+  margin-top: 36px;
 }
 /* mobile */
 @media screen and (max-width: 600px) {
@@ -183,19 +187,22 @@ export default {
     margin-top: 100px;
   }
   .title {
-    font-size: 40px !important;
+    font-size: 38px !important;
   }
 }
 /* desktop */
 @media screen and (min-width: 1264px) and (max-width: 1904px) {
   .bannercard {
-    margin-top: 15%;
+    margin-top: 13%;
+  }
+  .title {
+    font-size: 38px !important;
   }
 }
 /* extra large */
 @media screen and (min-width: 1905px) {
   .bannercard {
-    margin-top: 15%;
+    margin-top: 13%;
   }
 }
 </style>>
