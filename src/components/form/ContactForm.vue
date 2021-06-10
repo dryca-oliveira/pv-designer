@@ -162,7 +162,7 @@ export default {
     font-size: 14px;
   }
   .form {
-    padding: 50px 16px 50px 20px;
+    padding: 50px 4px 20px 4px;
   }
 }
 /* tablet */

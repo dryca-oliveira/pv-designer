@@ -3,7 +3,7 @@
     <v-row class="text-center" justify="space-between">
       <!-- logo -->
       <v-col class="d-flex align-center text-left pl-0" cols="4" md="1">
-        <a href="#">
+        <a href="/">
           <v-img
             alt="PV logo"
             class="shrink logo-img"
@@ -21,7 +21,7 @@
         <nav>
           <ul class="pl-0">
             <li class="pr-md-8 pr-lg-15">
-              <a href="#about">Sobre</a>
+              <a href="/about">Sobre</a>
             </li>
             <li class="pr-md-8 pr-lg-15"><a href="#projects">Portifólio</a></li>
             <li class="pr-md-8 pr-lg-15"><a href="#services">Serviços</a></li>
@@ -85,7 +85,7 @@
       <v-navigation-drawer v-model="drawer" absolute right app temporary dark>
         <v-list nav dense>
           <v-list-item-group v-model="group" active-class="ativo">
-            <v-list-item href="#about">
+            <v-list-item href="/about">
               <v-list-item-title> Sobre</v-list-item-title>
             </v-list-item>
 

@@ -114,10 +114,7 @@ export default {
 .slick-slider {
   margin-bottom: -10px;
 }
-.heightImage {
-  max-height: 690px;
-  height: 100%;
-}
+
 .controls {
   position: absolute;
   z-index: 1;

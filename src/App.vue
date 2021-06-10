@@ -1,4 +1,3 @@
-
 <template>
   <v-app id="app">
     <v-app-bar :height="height" :color="color" fixed app dark elevation="0">
@@ -6,14 +5,7 @@
     </v-app-bar>
 
     <v-main v-scroll="onScroll">
-      <v-container fluid>
-        <Banner />
-        <About />
-        <Projects />
-        <Services />
-        <Clients />
-        <Contact />
-      </v-container>
+      <router-view />
     </v-main>
     <footer>
       <Footer />
@@ -23,25 +15,14 @@
 
 <script>
 import Appbar from "./components/Appbar";
-import Banner from "./components/Banner";
-import About from "./components/About.vue";
-import Projects from "./components/Projects.vue";
-import Services from "./components/Services.vue";
-import Clients from "./components/Clients.vue";
-import Contact from "./components/Contact.vue";
-import Footer from "./components/Footer.vue";
+import Footer from "./components/Footer";
 export default {
   name: "App",
   components: {
     Appbar,
-    Banner,
-    About,
-    Projects,
-    Services,
-    Clients,
-    Contact,
     Footer,
   },
+
   data: () => ({
     color: "#1f1f1f",
     height: "70px",

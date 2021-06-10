@@ -7,12 +7,12 @@
             text-center text-sm-left text-caption
             d-flex
             align-center
-            pl-lg-0
+            pl-0 pl-sm-4 pl-lg-0
           "
           cols="4"
           sm="6"
         >
-          <a href="#home">
+          <a href="/">
             <v-img
               alt="PV logo"
               class="shrink"
@@ -36,11 +36,11 @@
               >
                 <a href=" "> Blog </a>
               </v-col>
-              <v-col class="text-center px-0" cols="4">
-                <a href=" ">Perguntas frequentes</a>
+              <v-col class="text-center px-0 ml" cols="4">
+                <a href="/perquntas-frequentes">Perguntas frequentes</a>
               </v-col>
               <v-col class="text-left text-sm-center px-0" cols="4">
-                <a href=" ">Políticas de privacidade</a>
+                <a>Políticas de privacidade</a>
               </v-col>
               <v-col
                 class="text-left text-sm-right px-0 pr-sm-1"
@@ -84,11 +84,14 @@ a:hover {
   .text-caption {
     font-size: 8px !important;
   }
+  .ml {
+    margin-left: -12px;
+  }
 }
 /* tablet */
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .text-caption {
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
 }
 /* leptop */

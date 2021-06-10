@@ -31,7 +31,7 @@
           minhas habilidades e ajudo empresas a alcançarem seus objtivos.
         </v-col>
         <v-col class="pt-0 pl-0 paddingButton" cols="12">
-          <v-btn class="aboutBtn" color="#fff">Veja mais </v-btn>
+          <v-btn href="/about" class="aboutBtn" color="#fff">Veja mais </v-btn>
         </v-col>
       </v-row>
     </v-col>
@@ -82,8 +82,8 @@ export default {};
     margin-top: 50px;
   }
   .padding {
-    padding-left: 24px !important;
-    padding-right: 20px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
   .text {
     font-size: 16px !important;
