@@ -18,7 +18,6 @@ import Clients from "../components/Clients.vue";
 import Contact from "../components/Contact.vue";
 export default {
   name: "Home",
-
   components: {
     Banner,
     About,
@@ -27,6 +26,16 @@ export default {
     Clients,
     Contact,
   },
+  data: () => ({
+    overlay: true,
+  }),
+  created() {
+    setTimeout(() => {
+      this.overlay = false;
+    }, 2000);
+  },
 };
 </script>
+<style scoped>
+</style>
 

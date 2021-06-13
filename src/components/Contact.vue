@@ -1,5 +1,5 @@
 <template>
-  <v-row style="background-color: #2021de" id="contact" fluid>
+  <v-row style="background-color: #2021de" id="contato" fluid>
     <v-col>
       <v-row class="contact">
         <!-- card-Left -->
@@ -11,7 +11,7 @@
         >
           <v-row class="white--text" style="max-width: 575px">
             <v-col cols="12" class="pt-0 pl-0">
-              <div class="font-title" style="max-width: 340px">
+              <div class="font-title" style="max-width: 345px">
                 Experimente <br />
                 um atentimento ainda mais eficiente. Só chamar a gente no
                 Whatsapp
@@ -35,19 +35,39 @@
                 *Número exclusivo para atendimento.
               </div>
               <div class="icons">
-                <a class="social-media-icon" href="">
+                <a
+                  class="social-media-icon"
+                  target="_blank"
+                  href="https://www.instagram.com/paulovitordesigner/"
+                >
                   <i class="fab fa-instagram"></i>
                 </a>
-                <a class="social-media-icon" href="">
+                <a
+                  class="social-media-icon"
+                  target="_blank"
+                  href="https://www.facebook.com/paulovitordesign"
+                >
                   <i class="fab fa-facebook-f"></i
                 ></a>
-                <a class="social-media-icon" href="">
+                <a
+                  class="social-media-icon"
+                  target="_blank"
+                  href="https://www.behance.net/paulovitordesigner"
+                >
                   <i class="fab fa-behance"></i>
                 </a>
-                <a class="social-media-icon" href="">
+                <a
+                  class="social-media-icon"
+                  target="_blank"
+                  href="https://dribbble.com/paulovitordesigner"
+                >
                   <i class="fab fa-dribbble"></i>
                 </a>
-                <a class="social-media-icon" href="">
+                <a
+                  class="social-media-icon"
+                  target="_blank"
+                  href="https://br.pinterest.com/paulovitordesigner/_created/"
+                >
                   <i class="fab fa-pinterest-p"></i>
                 </a>
               </div>

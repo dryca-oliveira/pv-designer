@@ -1,23 +1,26 @@
 <template>
-  <v-row id="services" v-scroll="onScroll" style="background-color: #f1f1f1">
+  <v-row id="servicos" v-scroll="onScroll" style="background-color: #f1f1f1">
     <v-col cols="12" class="px-0 py-0">
       <v-container style="max-width: 1150px">
         <v-row
-          class="flex-column-reverse flex-sm-row text-center text-sm-left justify-sm-center px-4 px-lg-0"
+          class="
+            flex-column-reverse flex-sm-row
+            text-center text-sm-left
+            justify-sm-center
+            px-4 px-lg-0
+          "
         >
           <v-col class="pa-0" cols="12" sm="9" md="8" lg="8">
             <transition name="fadeInRight">
               <div v-if="show" class="font-title font-weight-bold pb-lg-3">
-                O que podemos fazer por você?
+                Como posso te ajudar?
               </div>
             </transition>
             <div v-if="!show" style="height: 300px"></div>
 
             <div class="text-left font-subtitle pb-6">
-              Estamos aqui para atender você nos mais varioados projetos.
-              Conheça nossos principais serviços, estamos aqui para atender você
-              nos mais variados projetos, serviços, estamos estamos aqui para
-              atender você nos mais variados projetos
+              Estous aqui para atender você nos mais variados projetos. Conheça
+              os principais serviços:
             </div>
           </v-col>
           <transition name="fadeInLeft">
@@ -54,8 +57,8 @@
             </div>
             <div class="titulo pt-3">design gráfico</div>
             <div class="texto pt-3">
-              "Folder, flyer, cartão de visita,pasta, papel timbrado,
-              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+              Slides – Apresentações corporativas Criação de materiais impressos
+              Artes para e-mail marketing Rótulos para produtos Editorial
             </div>
           </v-col>
           <v-col
@@ -68,8 +71,9 @@
             </div>
             <div class="titulo pt-3">redes sociais</div>
             <div class="texto pt-3">
-              "Folder, flyer, cartão de visita,pasta, papel timbrado,
-              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+              Tenha uma presença marcante com conteúdo de qualidade,
+              gerenciamento de mídias sociais, criação de banners digitais,
+              campanhas e anúncios.
             </div>
           </v-col>
           <v-col
@@ -82,8 +86,9 @@
             </div>
             <div class="titulo pt-3">ediçao de vídeo</div>
             <div class="texto pt-3">
-              "Folder, flyer, cartão de visita,pasta, papel timbrado,
-              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+              Muitas empresas já entenderam o real impacto que os vídeos podem
+              gerar no meio digital e como são uma ferramenta forte para atrais
+              clientes.
             </div>
           </v-col>
         </v-row>
@@ -95,8 +100,9 @@
             </div>
             <div class="titulo pt-3">identidade visual</div>
             <div class="texto pt-3">
-              "Folder, flyer, cartão de visita,pasta, papel timbrado,
-              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+              A identidade da sua empresa reflete a qualidade do produto ou
+              serviço que você oferece? Se a resposta for não, posso ajudar
+              você.
             </div>
           </v-col>
           <v-col
@@ -109,8 +115,8 @@
             </div>
             <div class="titulo pt-3">criação de sites</div>
             <div class="texto pt-3">
-              "Folder, flyer, cartão de visita,pasta, papel timbrado,
-              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+              Desenvolvimento de websites, portais, e-commerce, aplicativos e
+              sistemas.
             </div>
           </v-col>
           <v-col
@@ -123,8 +129,8 @@
             </div>
             <div class="titulo pt-3">gospel</div>
             <div class="texto pt-3">
-              "Folder, flyer, cartão de visita,pasta, papel timbrado,
-              outdoor,painel, uniforme, crachá,adesivo, revista, livro"
+              Encante seus fãs com capa de CD/DVD, cover de Spotify e todo
+              material digital.
             </div>
           </v-col>
         </v-row>
@@ -164,7 +170,7 @@ export default {
 .fadeInLeft-enter {
   transform: translate3d(130px, 0, 0);
 }
-#services {
+#servicos {
   padding-top: 110px;
   padding-bottom: 46px;
   overflow: hidden;
@@ -220,8 +226,8 @@ export default {
   .fadeInLeft-enter {
     transform: translate3d(0, 40px, 0);
   }
-  #services {
-    padding-top: 0px;
+  #servicos {
+    padding-top: 64px;
   }
   .font-title {
     font-size: 26px;
@@ -236,7 +242,7 @@ export default {
 }
 /* tablet */
 @media screen and (min-width: 601px) and (max-width: 960px) {
-  #services {
+  #servicos {
     padding-top: 30px;
     max-height: none;
   }
@@ -246,7 +252,7 @@ export default {
 }
 /* leptop */
 @media screen and (min-width: 961px) and (max-width: 1264px) {
-  #services {
+  #servicos {
     padding-top: 60px;
     padding-bottom: 60px;
   }

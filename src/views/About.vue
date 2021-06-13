@@ -3,9 +3,9 @@
     <v-row>
       <v-col class="pa-0">
         <v-img
-          class="pb-16 grey darken-4"
-          lazy-src="@/media/bannerAbout.png"
-          src="@/media/bannerAbout.png"
+          class="pb-lg-16 grey darken-4"
+          lazy-src="@/assets/banner-about.png"
+          src="@/assets/banner-about.png"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
@@ -17,12 +17,13 @@
         ></v-img>
       </v-col>
     </v-row>
+
     <v-row id="about" style="background-color: #1f22fd">
       <v-col class="pa-0" cols="12 " md="6">
         <v-img
           class="imagem grey darken-4"
-          lazy-src="@/media/about.jpg"
-          src="@/media/about.jpg"
+          lazy-src="@/media/about-image.png"
+          src="@/media/about-image.png"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
@@ -36,7 +37,7 @@
       </v-col>
       <v-col cols="12" md="6" class="white--text pa-0">
         <v-row class="card" style="max-width: 513px">
-          <v-col class="px-0 pt-0 pb-lg-9" cols="12" lg="12">
+          <v-col class="px-0 pt-0 pb-lg-9 pt-xl-16" cols="12" lg="12">
             <h3>Quem é o Paulo Vitor cidadão?</h3>
             <p>
               Um designer brasileiro de 33 anos, nascido no Rio de Janeiro que
@@ -57,6 +58,7 @@
         </v-row>
       </v-col>
     </v-row>
+
     <v-row class="message bg-dark" justify="center">
       <v-col class="px-4 pa-md-0" sm="6" lg="6">
         <p class="ma-0 text-center">
@@ -149,6 +151,9 @@ export default {
   components: {
     Contact,
   },
+  data: () => ({
+    isActive: false,
+  }),
 };
 </script>
 

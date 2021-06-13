@@ -1,32 +1,38 @@
 <template>
   <v-app id="app">
-    <v-app-bar :height="height" :color="color" fixed app dark elevation="0">
-      <Appbar />
-    </v-app-bar>
+    <router-view :height="height" :color="color" name="appBar" />
 
-    <v-main v-scroll="onScroll">
+    <v-main v-if="!overlay" v-scroll="onScroll">
       <router-view />
     </v-main>
-    <footer>
+    <footer v-if="!overlay">
       <Footer />
     </footer>
+    <v-overlay :value="overlay">
+      <v-progress-circular indeterminate size="64"></v-progress-circular>
+    </v-overlay>
   </v-app>
 </template>
 
 <script>
-import Appbar from "./components/Appbar";
 import Footer from "./components/Footer";
 export default {
   name: "App",
   components: {
-    Appbar,
     Footer,
   },
 
   data: () => ({
     color: "#1f1f1f",
     height: "70px",
+    overlay: true,
   }),
+  created() {
+    setTimeout(() => {
+      this.overlay = false;
+    }, 2000);
+  },
+
   methods: {
     onScroll() {
       let logoImg = document.querySelector(".logo-img");
@@ -52,7 +58,6 @@ export default {
 </script>
 <style>
 * {
-  scroll-behavior: smooth;
   margin: 0;
 }
 body {

@@ -1,10 +1,34 @@
 <template>
-  <v-row id="projects">
+  <v-row id="projetos">
     <v-col cols="12" class="px-0 pt-0 pb-0">
       <ul class="filters d-none d-sm-flex">
-        <li v-on:click="setFilter('ALL')" class="active">Todos</li>
+        <li
+          v-on:click="setFilter('ALL')"
+          :class="{ active: currentFilter === 'ALL' }"
+        >
+          Todos
+        </li>
         <span>/</span>
-        <li v-on:click="setFilter('LOGO')">Logo</li>
+        <li
+          v-on:click="setFilter('LOGO')"
+          :class="{ active: currentFilter === 'LOGO' }"
+        >
+          Logo
+        </li>
+        <span>/</span>
+        <li
+          v-on:click="setFilter('ARTE')"
+          :class="{ active: currentFilter === 'ARTE' }"
+        >
+          Arte
+        </li>
+        <span>/</span>
+        <li
+          v-on:click="setFilter('GOSPEL')"
+          :class="{ active: currentFilter === 'GOSPEL' }"
+        >
+          Gospel
+        </li>
       </ul>
 
       <transition-group class="projects" name="projects">
@@ -61,15 +85,15 @@ export default {
       projects: [
         {
           image: require("../media/img1.jpg"),
-          category: "OUTROS",
+          category: "ARTE",
         },
         {
           image: require("../media/img2.jpg"),
-          category: "OUTROS",
+          category: "GOSPEL",
         },
         {
           image: require("../media/img3.jpg"),
-          category: "OUTROS",
+          category: "LOGO",
         },
         {
           image: require("../media/img4.jpg"),
@@ -77,16 +101,15 @@ export default {
         },
         {
           image: require("../media/img5.jpg"),
-          category: "OUTROS",
+          category: "LOGO",
         },
         {
           image: require("../media/img6.jpg"),
-          category: "OUTROS",
+          category: "LOGO",
         },
         {
-          title: "Inking",
           image: require("../media/img7.jpg"),
-          category: "OUTROS",
+          category: "LOGO",
         },
         {
           image: require("../media/img8.jpg"),

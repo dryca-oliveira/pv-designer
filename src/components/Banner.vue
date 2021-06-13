@@ -1,4 +1,4 @@
-<template>
+<template >
   <v-row id="home">
     <v-col cols="12" class="pa-0 grey darken-4">
       <v-container fluid class="controls">
@@ -37,10 +37,12 @@
 
                   <div v-if="item.btn">
                     <v-btn
+                      href="/em-breve"
                       dark
                       color="#1f22fd"
                       class="bannerBtn font-weight-bold"
-                      >Veja mais</v-btn
+                    >
+                      Veja mais</v-btn
                     >
                   </div>
                 </v-col>
@@ -83,18 +85,21 @@ export default {
           btn: true,
         },
         {
-          title: "A ideia da marca vale mais que a própria marca",
+          title: "A ideia da marca vale mais ",
+          subtitle: "que a própria marca",
           src: require("../assets/banner-site.png"),
-          btn: false,
+          btn: true,
         },
         {
-          title: "A ideia da marca vale mais que a própria marca",
+          title: "A ideia da marca vale mais ",
+          subtitle: "que a própria marca",
           src: require("../assets/banner-site.png"),
-          btn: false,
+          btn: true,
         },
       ],
     };
   },
+
   methods: {
     showNext() {
       this.$refs.carousel.next();
@@ -128,6 +133,7 @@ export default {
   align-items: flex-end;
   max-width: 1150px;
   margin-top: 244px;
+  margin-bottom: 244px;
 }
 .title {
   font-family: "Montserrat", sans-serif !important;
@@ -147,15 +153,16 @@ export default {
 @media screen and (max-width: 600px) {
   .bannercard {
     margin-top: 1%;
+    margin-bottom: 16%;
   }
   .title {
-    font-size: 20px !important;
+    font-size: 16px !important;
     line-height: 20px;
   }
   .bannerBtn {
     width: 80px;
     height: 30px !important;
-    font-size: 10px;
+    font-size: 10px !important;
     margin-top: 10px;
   }
 }
@@ -163,6 +170,7 @@ export default {
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .bannercard {
     margin-top: 10%;
+    margin-bottom: 10%;
   }
   .bannerBtn {
     margin-top: 20px;

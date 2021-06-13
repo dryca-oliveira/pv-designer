@@ -1,11 +1,10 @@
 <template>
-  <v-row id="about" style="background-color: #1f22fd">
+  <v-row id="sobre">
     <v-col class="pa-0" cols="12 " md="6">
       <v-img
         class="imagem"
-        lazy-src="@/media/about.jpg"
-        src="@/media/about.jpg"
-        max-height="798px"
+        lazy-src="@/media/about-image.png"
+        src="@/media/about-image.png"
       >
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
@@ -17,21 +16,23 @@
         </template>
       </v-img>
     </v-col>
-    <v-col cols="12" md="6" class="pl-lg-4">
+    <v-col cols="12" md="6" class="pl-lg-4" style="background-color: #1f22fd">
       <v-row class="padding ml-sm-16" style="max-width: 516px">
         <v-col class="title pa-0" cols="12" lg="10">
-          Desenvolvimento <br />
-          de marcas focado no DNA da sua empresa
+          Desenvolvo projetos focados no DNA da sua empresa
         </v-col>
         <v-col class="text px-0 pb-0" cols="12">
-          Olá, sou Paulo Vitor, possuo uma experiência como designer com mais de
-          7 anos de mercado, especializado em marcas. Das diversas áreas que a
-          publicidade me proporcionou, me encontrei no designer gráfio. já
-          trabalhei em algumas empresas a nível Brasil onde aprendi e desenvolvi
-          minhas habilidades e ajudo empresas a alcançarem seus objtivos.
+          Olá, sou o Paulo Vitor, possuo uma experiência como designer com mais
+          de 10 anos de mercado, onde ajudo empresas a alcançarem seus
+          objetivos. Especializado em Identidade Visual. Das diversas áreas que
+          o marketing e a publicidade me proporcionou, me encontrei no Design
+          Gráfico. Trabalhei em algumas empresas a nível nacional onde aprendi a
+          desenvolver minhas habilidaes.
         </v-col>
         <v-col class="pt-0 pl-0 paddingButton" cols="12">
-          <v-btn href="/about" class="aboutBtn" color="#fff">Veja mais </v-btn>
+          <v-btn href="/em-breve" class="aboutBtn" color="#fff"
+            >Veja mais
+          </v-btn>
         </v-col>
       </v-row>
     </v-col>
@@ -43,8 +44,8 @@ export default {};
 </script>
 
 <style scoped>
-#about {
-  background-color: #1f22fd;
+#sobre {
+  background-color: #1f1f1f;
   color: #fff;
 }
 
@@ -62,7 +63,6 @@ export default {};
 }
 .paddingButton {
   padding-top: 72px !important;
-  padding-bottom: 132px;
 }
 
 .aboutBtn {
@@ -109,7 +109,7 @@ export default {};
 }
 /* leptop */
 @media screen and (min-width: 961px) and (max-width: 1264px) {
-  #about {
+  #sobre {
     height: 740px;
   }
   .imagem {
@@ -125,9 +125,6 @@ export default {};
 }
 /* desktop */
 @media screen and (min-width: 1264px) and (max-width: 1904px) {
-  #about {
-    height: 798px;
-  }
   .imagem {
     height: 798px;
   }

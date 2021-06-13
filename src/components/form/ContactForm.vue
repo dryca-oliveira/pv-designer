@@ -73,7 +73,7 @@
               hide-details
               solo
               flat
-              height="200"
+              height="210"
               label="Mensagem"
             ></v-textarea>
           </v-col>
@@ -87,7 +87,6 @@
             <v-btn
               type="submit"
               class="font-weight-bold btn-form"
-              style=""
               color="#FAB013"
               dark
               @click="submit_form()"

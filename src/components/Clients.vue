@@ -1,5 +1,5 @@
 <template>
-  <v-row class="flex-column" v-scroll="onScroll" id="clients">
+  <v-row class="flex-column" v-scroll="onScroll" id="clientes">
     <v-container style="max-width: 1150px">
       <v-row
         class="
@@ -160,7 +160,7 @@ export default {
 </script>
 
 <style scoped >
-#clients {
+#clientes {
   padding-top: 120px;
   padding-bottom: 130px;
   overflow: hidden;
@@ -218,8 +218,8 @@ export default {
   .fadeInLeft-enter {
     transform: translate3d(0, 40px, 0);
   }
-  #clients {
-    padding-top: 10px;
+  #clientes {
+    padding-top: 64px;
     padding-bottom: 40px;
   }
   .font-title {
@@ -235,7 +235,7 @@ export default {
 }
 /* leptop */
 @media screen and (min-width: 961px) and (max-width: 1264px) {
-  #clients {
+  #clientes {
     padding-top: 60px;
   }
 }
