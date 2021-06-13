@@ -30,9 +30,7 @@
           desenvolver minhas habilidaes.
         </v-col>
         <v-col class="pt-0 pl-0 paddingButton" cols="12">
-          <v-btn href="/em-breve" class="aboutBtn" color="#fff"
-            >Veja mais
-          </v-btn>
+          <v-btn to="/em-breve" class="aboutBtn" color="#fff">Veja mais </v-btn>
         </v-col>
       </v-row>
     </v-col>
