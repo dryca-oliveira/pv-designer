@@ -34,20 +34,22 @@
                 cols="2"
                 sm="1"
               >
-                <a href="/em-breve"> Blog </a>
+                <router-link to="/em-breve"> Blog </router-link>
               </v-col>
               <v-col class="text-center px-0 ml" cols="4">
-                <a href="/em-breve">Perguntas frequentes</a>
+                <router-link to="/em-breve"> Perguntas frequentes </router-link>
               </v-col>
               <v-col class="text-left text-sm-center px-0" cols="4">
-                <a href="/em-breve">Políticas de privacidade</a>
+                <router-link to="/em-breve">
+                  Políticas de privacidade
+                </router-link>
               </v-col>
               <v-col
                 class="text-left text-sm-right px-0 pr-sm-1"
                 cols="2"
                 sm="2"
               >
-                <a href="/em-breve">Newsletter</a>
+                <router-link to="/em-breve"> Newsletter </router-link>
               </v-col>
             </v-row>
           </v-container>

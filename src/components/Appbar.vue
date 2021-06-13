@@ -33,7 +33,7 @@
               <li class="pr-md-8 pr-lg-15">
                 <router-link to="#clientes"> Clientes </router-link>
               </li>
-              <li><a href="/em-breve">Blog</a></li>
+              <li><router-link to="/em-breve"> Blog </router-link></li>
             </ul>
           </nav>
         </v-col>
