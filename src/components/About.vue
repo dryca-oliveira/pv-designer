@@ -1,5 +1,5 @@
 <template>
-  <v-row id="sobre">
+  <v-row id="sobre" class="mt-3">
     <v-col class="pa-0" cols="12 " md="6">
       <v-img
         class="imagem"
@@ -18,19 +18,28 @@
     </v-col>
     <v-col cols="12" md="6" class="pl-lg-4" style="background-color: #1f22fd">
       <v-row class="padding ml-sm-16" style="max-width: 516px">
-        <v-col class="title pa-0" cols="12" lg="10">
-          Desenvolvo projetos focados no DNA da sua empresa
+        <v-col cols="12" lg="10">
+          <h2 class="title pa-0">
+            Desenvolvo projetos focados no DNA da sua empresa
+          </h2>
         </v-col>
         <v-col class="text px-0 pb-0" cols="12">
-          Olá, sou o Paulo Vitor, possuo uma experiência como designer com mais
-          de 10 anos de mercado, onde ajudo empresas a alcançarem seus
-          objetivos. Especializado em Identidade Visual. Das diversas áreas que
-          o marketing e a publicidade me proporcionou, me encontrei no Design
-          Gráfico. Trabalhei em algumas empresas a nível nacional onde aprendi a
-          desenvolver minhas habilidaes.
+          <p>
+            Olá, sou o Paulo Vitor, possuo uma experiência como designer com
+            mais de 10 anos de mercado, onde ajudo empresas a alcançarem seus
+            objetivos.
+          </p>
+          <p>
+            Especializado em Identidade Visual. Das diversas áreas que o
+            marketing e a publicidade me proporcionaram, me encontrei no Design
+            Gráfico. Trabalhei em algumas empresas a nível nacional e aprendi a
+            desenvolver habilidades.
+          </p>
         </v-col>
         <v-col class="pt-0 pl-0 paddingButton" cols="12">
-          <v-btn to="/em-breve" class="aboutBtn" color="#fff">Veja mais </v-btn>
+          <v-btn to="/sobre-mim" class="aboutBtn" color="#fff"
+            >Veja mais
+          </v-btn>
         </v-col>
       </v-row>
     </v-col>
@@ -73,11 +82,14 @@ export default {};
 }
 /* mobile */
 @media screen and (max-width: 600px) {
+  .imagem {
+    height: 60vh;
+  }
   .title {
     font-weight: 900;
     font-size: 26px !important;
     line-height: 32px;
-    margin-top: 50px;
+    margin-top: 64px;
   }
   .padding {
     padding-left: 16px !important;

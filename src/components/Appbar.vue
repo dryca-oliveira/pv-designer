@@ -15,25 +15,37 @@
         </v-col>
         <!-- Menu -->
         <v-col
-          class="d-none d-sm-none d-md-flex menu justify-end align-center px-0"
+          :class="{ 'justify-lg-end pr-16 ': !mostrar }"
+          class="
+            d-none d-sm-none d-md-flex
+            menu
+            justify-end justify-lg-start
+            align-center
+            px-0
+          "
           cols="4"
           md="6"
+          lg="7"
         >
           <nav>
             <ul class="pl-0">
-              <li class="pr-md-8 pr-lg-15">
+              <li v-if="mostrar" class="pr-lg">
                 <router-link to="#sobre"> Sobre </router-link>
               </li>
-              <li class="pr-md-8 pr-lg-15">
+              <li v-if="mostrar" class="pr-lg">
                 <router-link to="#projetos"> Portifólio </router-link>
               </li>
-              <li class="pr-md-8 pr-lg-15">
+              <li v-if="mostrar" class="pr-lg">
                 <router-link to="#servicos"> Serviços </router-link>
               </li>
-              <li class="pr-md-8 pr-lg-15">
-                <router-link to="#clientes"> Clientes </router-link>
+              <li v-if="!mostrar" class="pr-lg">
+                <router-link to="/"> Página Inicial </router-link>
               </li>
-              <li><router-link to="/em-breve"> Blog </router-link></li>
+              <li :class="{ 'pr-lg-13': !mostrar }" class="pr-md-8">
+                <router-link to="/perguntas-frequentes">
+                  Perguntas Frequentes
+                </router-link>
+              </li>
             </ul>
           </nav>
         </v-col>
@@ -59,9 +71,11 @@
           class="d-none d-sm-none d-md-flex justify-end align-center pr-0"
           cols="2"
           md="5"
+          lg="4"
         >
           <v-btn
-            to="#contato"
+            target="_blank"
+            href="https://paulovitordesigner.typeform.com/to/cK43zs"
             style="font-size: 14px; letter-spacing: 1px"
             class="px-13 font-weight-bold"
             small
@@ -125,11 +139,7 @@
               </v-list-item>
 
               <v-list-item to="#clientes">
-                <v-list-item-title>Clientes</v-list-item-title>
-              </v-list-item>
-
-              <v-list-item href="/em-breve">
-                <v-list-item-title>Blog</v-list-item-title>
+                <v-list-item-title>Perguntas frequentes</v-list-item-title>
               </v-list-item>
             </v-list-item-group>
           </v-list>
@@ -171,6 +181,18 @@
                 <i class="fab fa-pinterest-p"></i>
               </a>
             </v-col>
+            <v-col cols="12" class="ml-2"
+              ><v-btn
+                target="_blank"
+                href="https://paulovitordesigner.typeform.com/to/cK43zs"
+                style="font-size: 14px; letter-spacing: 1px"
+                class="px-13 font-weight-bold"
+                small
+                color="#1F22FD"
+              >
+                Orçamento
+              </v-btn></v-col
+            >
           </v-row>
         </v-navigation-drawer>
       </template>
@@ -184,6 +206,7 @@ export default {
   props: {
     height: String,
     color: String,
+    mostrar: Boolean,
   },
   data: () => ({
     drawer: false,
@@ -226,8 +249,7 @@ i {
   color: white;
 }
 #appbar i:hover {
-  color: #1f21df;
-  transform: scale(1.5);
+  color: #fab013;
 }
 .logo-img,
 .btnMenu {
@@ -238,5 +260,17 @@ i {
 .ativo {
   color: #fff !important;
   text-decoration: 2px underline #1f21df !important;
+}
+/* leptop */
+@media screen and (min-width: 961px) and (max-width: 1264px) {
+  .pr-lg {
+    padding-right: 42px !important;
+  }
+}
+/* desktop */
+@media screen and (min-width: 1264px) and (max-width: 1904px) {
+  .pr-lg {
+    padding-right: 77px !important;
+  }
 }
 </style>

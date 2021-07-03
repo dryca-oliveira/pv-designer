@@ -5,6 +5,9 @@ import Home from '../views/Home.vue'
 import Questions from '../views/CommonQuestions.vue'
 import ComingSoon from '../views/ComingSoon.vue'
 import About from '../views/About.vue'
+import Imo from '../views/Imo.vue'
+import Bojack from '../views/Bojack.vue'
+import Coronavirus from '../views/CoronaVirus.vue'
 
 
 Vue.use(VueRouter)
@@ -20,7 +23,7 @@ const routes = [
 
   },
   {
-    path: '/about',
+    path: '/sobre-mim',
     name: 'About',
     components: {
       appBar: Appbar,
@@ -28,9 +31,34 @@ const routes = [
     },
   },
   {
-    path: '/perquntas-frequentes',
+    path: '/perguntas-frequentes',
     name: 'CommonQuestions',
-    component: Questions
+    components: {
+      appBar: Appbar,
+      default: Questions,
+    },
+
+  },
+  {
+    path: '/portifolio-imo',
+    name: 'Imo',
+    component: Imo
+  },
+  {
+    path: '/portifolio-bojack',
+    name: 'Bojack',
+    components: {
+      appBar: Appbar,
+      default: Bojack,
+    },
+  },
+  {
+    path: '/portifolio-coronavirus',
+    name: 'Coronavirus',
+    components: {
+      appBar: Appbar,
+      default: Coronavirus,
+    },
   },
   {
     path: '/em-breve',

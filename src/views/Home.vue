@@ -1,10 +1,15 @@
 <template>
   <v-container fluid>
     <Banner />
+
     <About />
+
     <Projects />
+
     <Services />
+
     <Clients />
+
     <Contact />
   </v-container>
 </template>
@@ -16,6 +21,7 @@ import Projects from "../components/Projects.vue";
 import Services from "../components/Services.vue";
 import Clients from "../components/Clients.vue";
 import Contact from "../components/Contact.vue";
+
 export default {
   name: "Home",
   components: {
@@ -26,16 +32,10 @@ export default {
     Clients,
     Contact,
   },
-  data: () => ({
-    overlay: true,
-  }),
-  created() {
-    setTimeout(() => {
-      this.overlay = false;
-    }, 2000);
-  },
+  
 };
 </script>
 <style scoped>
+
 </style>
 

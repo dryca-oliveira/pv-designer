@@ -1,16 +1,19 @@
 <template>
   <v-app id="app">
-    <router-view :height="height" :color="color" name="appBar" />
+    <router-view
+      :mostrar="mostrar"
+      :height="height"
+      :color="color"
+      name="appBar"
+    />
 
-    <v-main v-if="!overlay" v-scroll="onScroll">
+    <v-main v-scroll="onScroll">
       <router-view />
     </v-main>
-    <footer v-if="!overlay">
+
+    <footer>
       <Footer />
     </footer>
-    <v-overlay :value="overlay">
-      <v-progress-circular indeterminate size="64"></v-progress-circular>
-    </v-overlay>
   </v-app>
 </template>
 
@@ -25,16 +28,19 @@ export default {
   data: () => ({
     color: "#1f1f1f",
     height: "70px",
-    overlay: true,
+    mostrar: true,
   }),
-  created() {
-    setTimeout(() => {
-      this.overlay = false;
-    }, 2000);
+  updated() {
+    if (this.$route.name === "Home") {
+      this.mostrar = true;
+    } else {
+      this.mostrar = false;
+    }
   },
 
   methods: {
     onScroll() {
+      // if (this.$route.name != "CommonQuestions") {
       let logoImg = document.querySelector(".logo-img");
       let btnMenu = document.querySelector(".btnMenu");
       if (window.scrollY > 50) {
@@ -54,6 +60,7 @@ export default {
       }
     },
   },
+  // },
 };
 </script>
 <style>
@@ -65,5 +72,12 @@ body {
 }
 #app {
   font-family: "Montserrat", sans-serif !important;
+}
+.theme--light.v-expansion-panels
+  .v-expansion-panel-header
+  .v-expansion-panel-header__icon
+  .v-icon {
+  color: blue !important;
+  font-size: small;
 }
 </style>

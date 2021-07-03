@@ -1,7 +1,11 @@
 <template>
   <v-row id="projetos">
-    <v-col cols="12" class="px-0 pt-0 pb-0">
-      <ul class="filters d-none d-sm-flex">
+    <v-col cols="12" class="px-0 pt-0 pb-0 text-center">
+      <h2 class="font-weight-bold px-sm-2">
+        Alguns dos projetos que já desenvolvi.
+      </h2>
+      <p>Empresas que ajudei a se conectarem com seus clientes</p>
+      <ul v-if="show" class="filters d-none d-sm-flex">
         <li
           v-on:click="setFilter('ALL')"
           :class="{ active: currentFilter === 'ALL' }"
@@ -140,7 +144,15 @@ export default {
     opacity: 0.9;
   }
 }
-
+h2 {
+  font-size: 38px;
+  margin-top: 84px;
+}
+p {
+  color: #828282;
+  font-size: 18px;
+  margin-bottom: 83px;
+}
 .filters {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -224,6 +236,13 @@ export default {
 }
 /* mobile */
 @media screen and (max-width: 600px) {
+  h2 {
+    font-size: 26px;
+    margin-top: 64px;
+  }
+  p {
+    margin-bottom: 64px;
+  }
   .project {
     width: 100vw;
     height: 200px;

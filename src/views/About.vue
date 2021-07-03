@@ -2,19 +2,9 @@
   <v-container fluid>
     <v-row>
       <v-col class="pa-0">
-        <v-img
-          class="pb-lg-16 grey darken-4"
-          lazy-src="@/assets/banner-about.png"
-          src="@/assets/banner-about.png"
+        <v-img class="pb-lg-16 grey darken-4" src="@/assets/banner-about.png">
+          ></v-img
         >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row> </template
-        ></v-img>
       </v-col>
     </v-row>
 
@@ -26,7 +16,12 @@
           src="@/media/about-image.png"
         >
           <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-row
+              style="height: 100vh"
+              class="ma-0"
+              align="center"
+              justify="center"
+            >
               <v-progress-circular
                 indeterminate
                 color="grey lighten-5"
@@ -153,7 +148,13 @@ export default {
   },
   data: () => ({
     isActive: false,
+    overlay: true,
   }),
+  created() {
+    setTimeout(() => {
+      this.overlay = false;
+    }, 2000);
+  },
 };
 </script>
 

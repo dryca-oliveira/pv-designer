@@ -1,42 +1,10 @@
 <template>
   <v-row class="flex-column" v-scroll="onScroll" id="clientes">
     <v-container style="max-width: 1150px">
-      <v-row
-        class="
-          flex-column-reverse flex-sm-row
-          text-center text-sm-left
-          justify-sm-center
-        "
-      >
-        <v-col cols="12" sm="9" md="8" lg="6" class="pl-sm-4 py-0 px-lg-0">
-          <transition name="fadeInRight">
-            <div v-if="show" class="font-title font-weight-bold">
-              Nossos clientes
-            </div>
-          </transition>
-          <div v-if="!show" class="show"></div>
+      <v-row class="text-center text-sm-left justify-sm-center">
+        <v-col cols="12" class="pl-sm-4 py-0 px-lg-0">
+          <div class="font-title font-weight-bold">Nossos clientes</div>
         </v-col>
-        <transition name="fadeInLeft">
-          <v-col
-            v-if="show"
-            cols="12"
-            sm="3"
-            md="4"
-            lg="6"
-            align-self="center"
-            class="text-sm-right pr-sm-4 pr-lg-0"
-          >
-            <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
-              >fas fa-star
-            </v-icon>
-            <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
-              >fas fa-star
-            </v-icon>
-            <v-icon style="font-size: 20px" class="pl-4" color="#F7B11D"
-              >fas fa-star
-            </v-icon>
-          </v-col>
-        </transition>
       </v-row>
     </v-container>
     <v-container style="max-width: 1390px">
@@ -53,7 +21,7 @@
           </v-btn>
         </v-col>
         <v-col class="px-0" cols="8" sm="10">
-          <VueSlickCarousel class="teste" ref="carousel" v-bind="settings">
+          <VueSlickCarousel ref="carousel" v-bind="settings">
             <div
               class="d-flex align-center justify-center px-2"
               v-for="(item, index) in brands"

@@ -16,23 +16,22 @@
                 um atentimento ainda mais eficiente. Só chamar a gente no
                 Whatsapp
               </div>
-              <v-hover v-slot="{ hover }">
-                <v-btn
-                  :elevation="hover ? 0 : 10"
-                  class="botao"
-                  href="https://web.whatsapp.com/send?phone=5521981564128"
-                  target="_blank"
-                  dark
-                  color="#0AC141"
-                >
-                  <v-icon class="pr-2"> fab fa-whatsapp </v-icon>
 
-                  Solicite seu orçamaneto
-                </v-btn>
-              </v-hover>
+              <v-btn
+                class="botao"
+                href="https://web.whatsapp.com/send?phone=5521981564128"
+                target="_blank"
+                dark
+                color="#0AC141"
+              >
+                <v-icon class="pr-2"> fab fa-whatsapp </v-icon>
+
+                Solicite seu orçamaneto
+              </v-btn>
+
               <div class="subtitle">
                 Ou se preferir +55 21 98156-4128. <br />
-                *Número exclusivo para atendimento.
+                Número exclusivo para atendimento.
               </div>
               <div class="icons">
                 <a

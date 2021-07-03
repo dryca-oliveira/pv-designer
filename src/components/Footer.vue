@@ -37,7 +37,9 @@
                 <router-link to="/em-breve"> Blog </router-link>
               </v-col>
               <v-col class="text-center px-0 ml" cols="4">
-                <router-link to="/em-breve"> Perguntas frequentes </router-link>
+                <router-link to="/perguntas-frequentes">
+                  Perguntas frequentes
+                </router-link>
               </v-col>
               <v-col class="text-left text-sm-center px-0" cols="4">
                 <router-link to="/em-breve">

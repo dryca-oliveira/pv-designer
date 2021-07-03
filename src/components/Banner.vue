@@ -30,10 +30,10 @@
             <v-container class="bannercard">
               <v-row class="justify-center justify-lg-start">
                 <v-col class="pb-0 pl-lg-0" cols="8" md="8" lg="7">
-                  <div class="title font-weight-black">
+                  <h1 class="title font-weight-black">
                     {{ item.title }} <br />
                     {{ item.subtitle }}
-                  </div>
+                  </h1>
 
                   <div v-if="item.btn">
                     <v-btn

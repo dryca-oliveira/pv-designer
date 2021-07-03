@@ -37,7 +37,7 @@
               type="email"
               required
               hide-details
-              label="Seu E-mail"
+              label="Seu e-mail"
               solo
               flat
             ></v-text-field>
@@ -148,6 +148,12 @@ export default {
   width: 170px;
   height: 43px !important;
   text-transform: none !important;
+}
+.v-input {
+  border: 2px solid transparent;
+}
+.v-input--is-focused {
+  border: 2px solid #fab013 !important;
 }
 
 /* mobile */
