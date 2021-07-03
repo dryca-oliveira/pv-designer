@@ -3,8 +3,7 @@
     <v-row>
       <v-col class="pa-0">
         <v-img class="pb-lg-16 grey darken-4" src="@/assets/banner-about.png">
-          ></v-img
-        >
+        </v-img>
       </v-col>
     </v-row>
 

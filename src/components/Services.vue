@@ -236,6 +236,9 @@ export default {
   .font-title {
     font-size: 38px;
   }
+  .card {
+    padding-right: 24px;
+  }
 }
 /* desktop */
 @media screen and (min-width: 1264px) and (max-width: 1904px) {
