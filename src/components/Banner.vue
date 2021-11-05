@@ -37,7 +37,7 @@
 
                   <div v-if="item.btn">
                     <v-btn
-                      to="#projetos"
+                      to="/portifolio-bojack"
                       dark
                       color="#1f22fd"
                       class="bannerBtn font-weight-bold"

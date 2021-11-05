@@ -8,25 +8,25 @@
     <v-container style="max-width: 1150px">
       <v-row justify="center">
         <v-col cols="12" class="texto px-0">
-          <div class="mx-auto" style="max-width: 774px; color: white">
-            <p class="font-italic">
+          <div style="max-width: 80%; color: white">
+            <p class="font-italic font-weight-regular">
               In this period when most of the market has stopped, the economy
               affected, people are "stuck" at home due to the spreading
               pandemic. That we can rethink life, health, work, money and
               family.
             </p>
-            <p class="font-italic">
+            <p class="font-italic font-weight-regular">
               Concept: A lone, surviving soldier with a mask to protect himself
               from a land devastated by the virus. The search for a solution.
             </p>
 
-            <p class="pt-4">
+            <p class="pt-4 font-weight-bold">
               Nesse período em que a maior parte do mercado parou, a economia
               está afetada, as pessoas estão "presas" em casa devido a pandemia
               que se espalha, que possamos repensar a vida, a saúde, o trabalho,
               o dinheiro e a família.
             </p>
-            <p>
+            <p class="font-weight-bold">
               Conceito: Um soldado solitário. Sobrevivente com uma máscara para
               se proteger de uma terra arrasada pelo vírus. A procura de uma
               solução.
@@ -91,9 +91,9 @@ export default {
   padding-top: 34px;
   margin-bottom: 0px;
 }
-p {
-  font-size: 18px;
-  font-weight: 700;
+p,
+h2 {
+  font-size: 24px;
 }
 
 @media screen and (max-width: 600px) {
