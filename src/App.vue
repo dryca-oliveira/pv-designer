@@ -1,6 +1,7 @@
 <template>
   <v-app id="app">
     <router-view
+      :alterar="alterar"
       :mostrar="mostrar"
       :height="height"
       :color="color"
@@ -27,15 +28,15 @@ export default {
 
   data: () => ({
     color: "#1f1f1f",
-    height: "70px",
+    height: "80px",
     mostrar: true,
+    alterar: true,
   }),
+  mounted() {
+    this.checkRoute();
+  },
   updated() {
-    if (this.$route.name === "Home") {
-      this.mostrar = true;
-    } else {
-      this.mostrar = false;
-    }
+    this.checkRoute();
   },
 
   methods: {
@@ -53,10 +54,23 @@ export default {
       } else {
         this.color = "#1f1f1f";
         this.show = false;
-        this.height = "70px";
+        this.height = "80px";
         logoImg.style.width = "40px";
         btnMenu.style.width = "40px";
         btnMenu.style.height = "40px";
+      }
+    },
+    checkRoute() {
+      if (this.$route.name === "Home") {
+        this.mostrar = true;
+        this.alterar = true;
+      } else {
+        this.mostrar = false;
+        if (this.$route.name === "CommonQuestions") {
+          this.alterar = false;
+        } else {
+          this.alterar = true;
+        }
       }
     },
   },
@@ -79,5 +93,8 @@ body {
   .v-icon {
   color: blue !important;
   font-size: small;
+}
+.v-btn {
+  letter-spacing: 0px !important;
 }
 </style>

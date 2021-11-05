@@ -1,10 +1,10 @@
 <template>
-  <v-row id="projetos">
+  <v-row id="projetos" class="mt-3">
     <v-col cols="12" class="px-0 pt-0 pb-0 text-center">
-      <h2 class="font-weight-bold px-sm-2">
-        Alguns dos projetos que já desenvolvi.
+      <h2 class="font-weight-bold px-4 px-sm-2">
+        Empresas que ajudei a conectarem-se com seus clientes.
       </h2>
-      <p>Empresas que ajudei a se conectarem com seus clientes</p>
+      <p class="px-4">Alguns dos projetos que já desenvolvi.</p>
       <ul v-if="show" class="filters d-none d-sm-flex">
         <li
           v-on:click="setFilter('ALL')"
@@ -66,7 +66,10 @@
                     class="d-flex v-card--reveal display-3 white--text"
                     style="height: 100%"
                   >
-                    <div class="category px-7">
+                    <div
+                      @click="$router.push({ name: project.to })"
+                      class="category px-7"
+                    >
                       {{ project.category }}
                     </div>
                   </div>
@@ -90,38 +93,44 @@ export default {
         {
           image: require("../media/img1.jpg"),
           category: "ARTE",
+          to: "Coronavirus",
         },
         {
-          image: require("../media/img2.jpg"),
-          category: "GOSPEL",
+          image: require("../media/img2.png"),
+          category: "Logo",
+          to: "Suprime",
         },
         {
-          image: require("../media/img3.jpg"),
+          image: require("../media/img3.png"),
           category: "LOGO",
+          to: "Logos",
         },
-        {
-          image: require("../media/img4.jpg"),
-          category: "LOGO",
-        },
+        // {
+        //   image: require("../media/img4.jpg"),
+        //   category: "LOGO",
+        // },
         {
           image: require("../media/img5.jpg"),
           category: "LOGO",
+          to: "Bojack",
         },
         {
           image: require("../media/img6.jpg"),
           category: "LOGO",
+          to: "Imo",
         },
-        {
-          image: require("../media/img7.jpg"),
-          category: "LOGO",
-        },
-        {
-          image: require("../media/img8.jpg"),
-          category: "LOGO",
-        },
+        // {
+        //   image: require("../media/img7.jpg"),
+        //   category: "LOGO",
+        // },
+        // {
+        //   image: require("../media/img8.jpg"),
+        //   category: "LOGO",
+        // },
         {
           image: require("../media/img9.jpg"),
           category: "LOGO",
+          to: "Belarina",
         },
       ],
     };
@@ -144,13 +153,17 @@ export default {
     opacity: 0.9;
   }
 }
+#projetos {
+  padding-top: 84px;
+}
 h2 {
-  font-size: 38px;
-  margin-top: 84px;
+  font-size: 30px;
+  line-height: 20px;
+  margin-bottom: 23px;
 }
 p {
   color: #828282;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 83px;
 }
 .filters {
@@ -230,15 +243,21 @@ p {
   background-color: #000;
 }
 .category {
+  cursor: pointer;
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid #fff;
 }
 /* mobile */
 @media screen and (max-width: 600px) {
+  #projetos {
+    padding-top: 0px;
+  }
   h2 {
     font-size: 26px;
+    line-height: 30px;
     margin-top: 64px;
+    margin-bottom: 4px;
   }
   p {
     margin-bottom: 64px;
@@ -260,9 +279,15 @@ p {
   .project-image {
     height: 280px;
   }
+  h2 {
+    line-height: 30px;
+  }
 }
 /* leptop */
 @media screen and (min-width: 961px) and (max-width: 1264px) {
+  #projetos {
+    padding-top: 144px;
+  }
 }
 /* desktop */
 @media screen and (min-width: 1264px) and (max-width: 1904px) {

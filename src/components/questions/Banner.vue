@@ -22,7 +22,7 @@ export default {};
 .title {
   font-size: 52px !important;
   font-weight: 800;
-  line-height: 48px;
+  line-height: 52px;
   color: #fff;
 }
 .absolute {

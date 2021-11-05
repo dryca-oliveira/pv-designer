@@ -11,21 +11,16 @@
             <v-expansion-panel-content>
               <p>
                 O objetivo do meu trabalho é aumentar o valor percebido sobre
-                seu negócio ao criar um visual distinto, duradouro e eficiente
-                para a sua marca. Uma identidade visual consistente e única
-                assegura reconhecimento, diferenciação e gera confiança para
-                seus consumidores.
+                seu negócio desenvolvendo projetos eficazes, duradouros e
+                funcionais para a sua marca. Um projeto bem pensado assegura o
+                resultado esperado, diferencia sua marca de outras e gera
+                confiança para seus consumidores.
               </p>
               <p>
                 Uma boa marca, quando atrelada a um bom produto/serviço, pode
-                ser fator decisivo para a escolha entre você e seu concorrente,
-                portanto, é importante enxergar meu trabalho como um
-                investimento no seu negócio.
-              </p>
-              <p>
-                Um projeto de identidade de marca pode incluir símbolo,
-                logotipo, ícones, itens de papelaria como cartão, timbrado e
-                envelope, manual de identidade, etc.
+                ser fator decisivo entre você e seu concorrente, portanto é
+                importante enxergar meu trabalho como um investimento no seu
+                negócio.
               </p>
             </v-expansion-panel-content>
           </v-expansion-panel>
@@ -36,15 +31,15 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <p>
-                50% de sinal + 50% no final do projeto via transferência,
-                boleto, depósito, PIX ou cartão de crédito.
+                + 50% no final do projeto via transferência, boleto, depósito,
+                PIX ou cartão de crédito.
               </p>
               <v-img src="@/assets/icones-pagamento.png"></v-img>
 
               <p class="pt-4">
                 Lembre-se que você não está me contratando para criar um
                 desenho, mas para entender a proposta da sua marca e ajudar seu
-                negócio a crescer.
+                negócio a crescer!
               </p>
             </v-expansion-panel-content>
           </v-expansion-panel>
@@ -84,7 +79,7 @@
             <v-expansion-panel-content>
               <p>
                 Sua empresa é como uma pessoa, ela precisa de uma identidade
-                própria que a torne única. Isso irá tranmditir confiança para o
+                própria que a torne única. Isso irá transmitir confiança para o
                 seu cliente, além de facilitar a memorização e identificação da
                 sua empresa nos mais variados pontos de contato da marca, como
                 cartões de visita, sacolas, embalagens, timbrado, envelopes,
@@ -93,24 +88,25 @@
               </p>
               <ol>
                 <li>
-                  Agrega valor Marcas que apresentam um design interessante
-                  tendem a conseguir se diferenciar dos concorrentes,
-                  conseguindo aumentar o valor percebido pelos seus
-                  consumidores, o que permite praticar preços com maior margem
-                  de lucro.
+                  Agreva valor Marcas <br />
+                  que apresentam um design interessante tendem a conseguir se
+                  diferenciar dos concorrentes, conseguindo aumentar o valor
+                  percebido pelos seus consumidores, o que permite praticar
+                  preços com maior margem de lucro.
                 </li>
                 <li>
-                  Aumenta a visibilidade Marcas sem design ou com design ruim
-                  são ignorados e geralmente precisam investir mais em marketing
-                  e publicidade.
+                  Aumenta a visibilidade <br />
+                  Marcas sem design ou com design ruim são ignorados e
+                  geralmente precisam investir mais em marketing e publicidade.
                 </li>
                 <li>
-                  Facilita a compra Um bom design é um facilitador e ajuda o
-                  consumidor na decisão de compra.
+                  Facilita a compra <br />
+                  Um bom design é um facilitador e ajuda o consumidor na decisão
+                  de compra.
                 </li>
                 <li>
-                  Otimiza a usabilidade O bom design diminui drasticamente a
-                  curva de aprendizado.
+                  Otimiza a usabilidade <br />
+                  O bom design diminui drasticamente a curva de aprendizado.
                 </li>
                 <li>
                   Constrói identidade Marcas são como pessoas: sem identidade se
@@ -118,17 +114,20 @@
                   construção da personalidade da marca.
                 </li>
                 <li>
-                  Retém o público alvo Um bom design cria identificação, fazendo
-                  com que seu cliente sempre dê preferência para sua marca.
+                  Retém o público alvo <br />
+                  Um bom design cria identificação, fazendo com que seu cliente
+                  sempre dê preferência para sua marca.
                 </li>
                 <li>
-                  Credibilidade A confiança é a primeira coisa que se perde
-                  quando nos deparamos com uma comunicação visual mal feita.
+                  Credibilidade <br />
+                  A confiança é a primeira coisa que se perde quando nos
+                  deparamos com uma comunicação visual mal feita.
                 </li>
                 <li>
-                  Facilita a comunicação Ter uma identidade visual bem projetada
-                  vai tornar a conversa com o público muito mais direcionada,
-                  além de facilitar qualquer implementação.
+                  Facilita a comunicação <br />
+                  Ter uma identidade visual bem projetada vai tornar a conversa
+                  com o público muito mais direcionada, além de facilitar
+                  qualquer implementação.
                 </li>
               </ol>
             </v-expansion-panel-content>
@@ -158,9 +157,9 @@
             <v-expansion-panel-content>
               <p>
                 Trabalharemos juntos para que isso não ocorra, pois além de
-                iniciarmos o projeto somente após entender suas necessidades,
+                iniciar o projeto somente após entender suas reais necessidades,
                 manteremos contato durante todo processo. Porém, caso aconteça,
-                faremos as alterações necessarias sem custo adicional dentro de
+                faremos as alterações necessárias sem custo adicional dentro de
                 um prazo negociado previamente.
               </p>
             </v-expansion-panel-content>
@@ -171,41 +170,45 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <p>
-                Toda ideia, marca ou projeto criado passa por um processo
-                criativo e é com ele que desenvolvo todas as etapas necessárias
-                para criar uma identidade visual, rótulo ou site. Confira abaixo
-                como eu uso cada uma delas.
+                Todo projeto criado passa por um processo criativo e é com ele
+                que desenvolvo todas as etapas necessárias para criar uma
+                identidade visual, rótulo de produto ou site.
               </p>
+              <p>Confira abaixo como eu uso cada uma das etapas!</p>
               <ol>
                 <li>
-                  Brieging Tudo começa pelo briefing. Ele é a matéria prima de
-                  todo projeto. Onde vou coletar, analisar e estudar as
-                  informações sobre o seu negócio, seus objetivos e os desafios.
-                  Com ele eu consigo identificar os atributos que o projeto
-                  preciso conter.
+                  Briefing <br />
+                  Tudo começa pelo briefing. Ele é a matéria prima de todo
+                  projeto. É onde vou coletar, analisar e estudar as informações
+                  sobre o seu negócio, seus objetivos e os desafios que ele
+                  possui. Com ele eu consigo identificar os atributos que o
+                  projeto precisa conter.
                 </li>
                 <li>
-                  Pesquisas Nessa etapa, após entender as necessidades do
-                  projeto, faço uma série de pesquisas que são, buscar
-                  referências, nálisar concorrentes, arquétipo da marca para o
-                  logo comunicar bem com os clientes e conceito.
+                  Pesquisas <br />
+                  Nessa etapa, após entender as necessidades do projeto, faço
+                  uma série de pesquisas que incluem: buscar referências,
+                  analisar concorrentes e entender a personalidade da marca,
+                  tudo visando fazer o logo comunicar bem com seu público alvo.
                 </li>
                 <li>
-                  Criação Estapa onde as idéias fluem e uso a criatividade. Vou
+                  Criação <br />
+                  Esta etapa é onde as ideias fluem e uso a criatividade. Vou
                   utilizar as informações que você me enviou como principal
                   fonte de inspiração. Essa é a hora de rabiscar, experimentar,
                   testar as ideias. Tudo com o objetivo de criar um trabalho que
-                  tenha uma identidade própria.
+                  tenha uma identidade própria!
                 </li>
                 <li>
-                  Apresentação Explico todo conceito do projeto, utilizo provas
-                  virtuais que vão nos dar uma boa ideia de como o projeto vai
-                  se comportar no mundo real. Você vai ter uma visualização
-                  aproximada dos materiais impressos antes de serem produzidos,
-                  garantindo que o projeto alcance as expectativas. E explico
-                  todo o conceito do projeto.
+                  Apresentação <br />
+                  Explico todo conceito do projeto, utilizo provas virtuais que
+                  vão nos dar uma boa ideia de como o projeto vai se comportar
+                  no mundo real. Você vai ter uma visualização aproximada dos
+                  materiais impressos antes de serem produzidos, garantindo que
+                  o projeto alcance as expectativas.
                 </li>
               </ol>
+              <p>O processo todo é de 15 a 20 dias.</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
 
@@ -215,12 +218,16 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <p>
-                <strong> Logo: </strong> Manual de marca e arquivos finais em
-                PDF, PNG e JPG – ou conforme suas necessidades. <br />
+                <strong> Identidade Visual:</strong> Um projeto pode incluir
+                símbolo, logotipo, ícones, itens de papelaria como cartão,
+                timbrado e envelope, manual de identidade visual e arquivos
+                finais em PDF, PNG e JPG – ou conforme suas necessidades.
+                <br />
                 <strong>Itens solicitados além projeto: </strong> Todos os
                 materiais solicitados serão preparados para produção conforme
-                suas necessidades. Consulte valores.
+                suas necessidades.
               </p>
+              <p>Consulte valores.</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
           <v-expansion-panel>
@@ -233,13 +240,13 @@
                 seguinte forma:
               </p>
               <ul>
-                <li>Desafio;</li>
-                <li>Solução;</li>
-                <li>Construção do logotipo;</li>
-                <li>Versão horizontal, vertical;</li>
+                <li>Desafio e Solução;</li>
+                <li>Personalidade da marca;</li>
+                <li>Cores;</li>
+                <li>Aspectos Visuais;</li>
                 <li>Símbolo (se tiver);</li>
+                <li>Construção do logotipo;</li>
                 <li>Aplicação;</li>
-                <li>Cores ;</li>
                 <li>Elemento gráfico de apoio;</li>
               </ul>
             </v-expansion-panel-content>
@@ -252,11 +259,12 @@
               <p>
                 Você receberá um projeto completo para sua marca agregar valor,
                 aumentar a visibilidade, otimizar a usabilidade, reter o público
-                alvo... Assim, não correremos o risco de definir o projeto
-                somente com base na estética do logo, pois, existem muitos logos
-                bonitos que não comunicam bem com o público alvo ou, na pior das
-                hipóteses, concluir o projeto sem fundamentação ou sem uma
-                mensagem clara.
+                alvo...
+              </p>
+              <p>
+                Assim, não correremos o risco de definir o projeto somente com
+                base na estética do logo, pois existem muitos logos bonitos que
+                não comunicam bem com o público alvo.
               </p>
             </v-expansion-panel-content>
           </v-expansion-panel>
@@ -268,7 +276,7 @@
               </h3>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-              <p>sim, é necessário você me enviar o logtipo.</p>
+              <p>Sim! É necessário você me enviar o logotipo.</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
           <v-expansion-panel>
@@ -279,7 +287,7 @@
               <p>
                 Não. Eu entrego apenas os projetos fechados para serem enviados
                 para a gráfica de sua preferência. Os materiais impressos são
-                contratados a parte.
+                contratados à parte.
               </p>
             </v-expansion-panel-content>
           </v-expansion-panel>
@@ -288,7 +296,7 @@
               <h3>14 - Você também faz o nome pra empresa?</h3>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-              <p>Não. O trabalho de naming deve ser contratado a parte.</p>
+              <p>Sim. Mas o trabalho de naming deve ser contratado à parte.</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -299,7 +307,7 @@
           alguma dúvida específica, entre em contato.
         </p>
 
-        <p>Muito obrigado, um forte abraço e sucesso.</p>
+        <p>Muito obrigado, um forte abraço e sucesso!</p>
       </v-col>
     </v-row>
   </v-container>
@@ -310,6 +318,13 @@ export default {};
 </script>
 
 <style scoped>
+.v-expansion-panel-header {
+  padding: 0;
+}
+.v-expansion-panel-content__wrap {
+  padding: 0 0px 0px !important;
+}
+
 h2 {
   color: #1f22fd;
   font-weight: 800;
@@ -319,6 +334,9 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 600;
+  line-height: 30px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 p {
   line-height: 30px;

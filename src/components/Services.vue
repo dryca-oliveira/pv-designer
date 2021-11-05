@@ -2,20 +2,13 @@
   <v-row id="servicos" v-scroll="onScroll" style="background-color: #f1f1f1">
     <v-col cols="12" class="px-0 py-0">
       <v-container style="max-width: 1150px">
-        <v-row
-          class="
-            flex-column-reverse flex-sm-row
-            text-center text-sm-left
-            justify-sm-center
-            px-4 px-lg-0
-          "
-        >
+        <v-row class="text-center text-sm-left justify-sm-center px-4 px-lg-0">
           <v-col class="pa-0" cols="12">
             <h2 class="font-title font-weight-bold pb-lg-1">
               Como posso te ajudar?
             </h2>
 
-            <p class="text-left font-subtitle">
+            <p class="font-subtitle">
               Estou aqui para atender você nos mais variados projetos. Conheça
               os principais serviços:
             </p>
@@ -25,12 +18,12 @@
           <v-col class="pl-sm-0 pt-sm-0" cols="12" sm="4" md="4">
             <div class="card">
               <div class="icone mt-n9">
-                <img src="@/assets/diamond.png" alt="" />
+                <img src="@/assets/diamond.svg" alt="" />
               </div>
-              <h3 class="titulo pt-1">Identidade Visual</h3>
-              <p class="texto pt-3">
+              <h3 class="titulo">Identidade Visual</h3>
+              <p class="texto">
                 A identidade da sua empresa reflete a qualidade do produto ou
-                serviço que você oferece? Se a resposta for não, posso ajudar
+                serviço que você oferece? Se a resposta for não, eu posso ajudar
                 você.
               </p>
             </div>
@@ -38,26 +31,26 @@
           <v-col class="pt-12 pt-sm-0" cols="12" sm="4" md="4">
             <div class="card">
               <div class="icone mt-n9">
-                <img src="@/assets/like.png" alt="" />
+                <img class="mb-2" src="@/assets/like.svg" alt="" />
               </div>
-              <h3 class="titulo pt-1">Redes Sociais</h3>
-              <p class="texto pt-3">
-                Tenha uma presença marcante com conteúdo de qualidade,
-                gerenciamento de mídias sociais, criação de banners digitais,
-                campanhas e anúncios.
+              <h3 class="titulo">Redes Sociais</h3>
+              <p class="texto">
+                Tenha uma presença marcante com Conteúdo de Qualidade,
+                Gerenciamento de Mídias Sociais, Criação de Banners Digitais,
+                Campanhas e Anúncios.
               </p>
             </div>
           </v-col>
           <v-col class="pr-sm-0 pt-12 pt-sm-0" cols="12" sm="4" md="4">
             <div class="card">
               <div class="icone mt-n9">
-                <img src="@/assets/video.png" alt="" />
+                <img src="@/assets/video.svg" alt="" />
               </div>
-              <h3 class="titulo pt-1">Edição de Vídeo</h3>
-              <p class="texto pt-3">
+              <h3 class="titulo">Edição de Vídeo</h3>
+              <p class="texto">
                 Muitas empresas já entenderam o real impacto que os vídeos podem
-                gerar no meio digital e como são uma ferramenta forte para
-                atrais clientes.
+                gerar no meio digital. Eu te ajudo a usar essa ferramenta de
+                forma sedutora para atrair clientes.
               </p>
             </div>
           </v-col>
@@ -66,37 +59,38 @@
           <v-col class="pl-sm-0 pt-12 pt-sm-0" cols="12" sm="4" md="4">
             <div class="card">
               <div class="icone mt-n9">
-                <img src="@/assets/graphic.png" alt="" />
+                <img src="@/assets/graphic.svg" alt="" />
               </div>
-              <h3 class="titulo pt-1">Design Gráfico</h3>
-              <p class="texto pt-3">
-                Slides – Apresentações corporativas Criação de materiais
-                impressos Artes para e-mail marketing Rótulos para produtos
-                Editorial
+              <h3 class="titulo">Design Gráfico</h3>
+              <p class="texto">
+                O design é responsável por melhorar a experiência do consumidor
+                levando-o à compra do produto ou serviço. É uma ferramenta capaz
+                de agregar valor para sua empresa.
               </p>
             </div>
           </v-col>
           <v-col class="pt-12 pt-sm-0" cols="12" sm="4" md="4">
             <div class="card">
               <div class="icone mt-n9">
-                <img src="@/assets/rede.png" alt="" />
+                <img src="@/assets/rede.svg" alt="" />
               </div>
-              <h3 class="titulo pt-1">Criação de Sites</h3>
-              <p class="texto pt-3">
-                Desenvolvimento de websites, portais, e-commerce, aplicativos e
-                sistemas.
+              <h3 class="titulo">Criação de Sites</h3>
+              <p class="texto">
+                O desenvolvimento de sites envolve muito mais do que marketing.
+                É também uma questão de estratégia. O seu site é a cara da sua
+                empresa. Vamos torná-lo deslumbrante!
               </p>
             </div>
           </v-col>
           <v-col class="pr-sm-0 pt-12 pt-sm-0" cols="12" sm="4" md="4">
             <div class="card">
               <div class="icone mt-n9">
-                <img src="@/assets/church.png" alt="" />
+                <img class="mb-2" src="@/assets/church.svg" alt="" />
               </div>
-              <h3 class="titulo pt-1">Gospel</h3>
-              <p class="texto pt-3">
-                Encante seus fãs com capa de CD/DVD, Mídia kit, cover de Spotify
-                e todo material digital.
+              <h3 class="titulo">Gospel</h3>
+              <p class="texto">
+                Encante seus fãs com Capas de CDs/DVDs, Mídia Kits, Covers de
+                Spotify e Todo Material Digital.
               </p>
             </div>
           </v-col>
@@ -167,19 +161,23 @@ export default {
   font-size: 20px;
   font-weight: bold;
   text-transform: none;
+  line-height: 14px;
+  margin-top: 26px;
+  margin-bottom: 18px;
 }
-/* .texto {
-  max-width: 267px;
-} */
+.texto {
+  line-height: 22px;
+}
 .show {
   height: 300px;
 }
 .card {
-  border: 1px solid #1f22fd;
+  border: 2px solid #1f22fd;
   border-radius: 24px;
   padding-left: 36px;
   padding-right: 42px;
-  height: 234px;
+  min-height: 234px;
+  height: 100%;
 }
 
 /* mobile */
@@ -209,33 +207,23 @@ export default {
     margin-bottom: 64px;
   }
   .card {
-    height: 268px;
     padding-right: 24px;
   }
 }
 /* tablet */
 @media screen and (min-width: 601px) and (max-width: 960px) {
   #servicos {
-    padding-top: 30px;
     max-height: none;
   }
-  .font-title {
-    font-size: 30px;
-  }
+
   .card {
-    height: 334px;
-    padding-right: 24px;
+    height: 312px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 /* leptop */
 @media screen and (min-width: 961px) and (max-width: 1264px) {
-  #servicos {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .font-title {
-    font-size: 38px;
-  }
   .card {
     padding-right: 24px;
   }

@@ -1,14 +1,14 @@
 <template >
   <v-row id="home">
     <v-col cols="12" class="pa-0 grey darken-4">
-      <v-container fluid class="controls">
-        <v-row>
-          <v-col cols="6">
+      <v-container fluid class="controls py-0">
+        <v-row justify="space-between">
+          <v-col class="py-0" cols="2">
             <v-btn elevation="0" @click="showNext" fab x-small color="#f1f1f13f"
               ><v-icon color="#f1f1f1"> fas fa-chevron-left </v-icon>
             </v-btn>
           </v-col>
-          <v-col class="text-right" cols="6">
+          <v-col class="py-0 text-right" cols="2">
             <v-btn elevation="0" @click="showPrev" fab x-small color="#f1f1f13f"
               ><v-icon color="#f1f1f1"> fas fa-chevron-right </v-icon>
             </v-btn>
@@ -29,8 +29,8 @@
             </template>
             <v-container class="bannercard">
               <v-row class="justify-center justify-lg-start">
-                <v-col class="pb-0 pl-lg-0" cols="8" md="8" lg="7">
-                  <h1 class="title font-weight-black">
+                <v-col class="pb-0 pl-0 pl-lg-0" cols="8" md="8" lg="7">
+                  <h1 class="title">
                     {{ item.title }} <br />
                     {{ item.subtitle }}
                   </h1>
@@ -140,6 +140,7 @@ export default {
   font-size: 40px !important;
   color: #fff;
   line-height: 54px;
+  font-weight: 800;
 }
 .bannerBtn {
   width: 170px;
@@ -152,7 +153,7 @@ export default {
 /* mobile */
 @media screen and (max-width: 600px) {
   .bannercard {
-    margin-top: 1%;
+    margin-top: 3%;
     margin-bottom: 16%;
   }
   .title {

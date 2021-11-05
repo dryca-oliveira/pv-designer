@@ -8,6 +8,11 @@ import About from '../views/About.vue'
 import Imo from '../views/Imo.vue'
 import Bojack from '../views/Bojack.vue'
 import Coronavirus from '../views/CoronaVirus.vue'
+import Logos from '../views/Logos.vue'
+import Suprime from '../views/Suprime.vue'
+import Belarina from '../views/Belarina.vue'
+
+
 
 
 Vue.use(VueRouter)
@@ -39,6 +44,7 @@ const routes = [
     },
 
   },
+
   {
     path: '/portifolio-imo',
     name: 'Imo',
@@ -53,11 +59,35 @@ const routes = [
     },
   },
   {
+    path: '/portifolio-logos',
+    name: 'Logos',
+    components: {
+      appBar: Appbar,
+      default: Logos,
+    },
+  },
+  {
     path: '/portifolio-coronavirus',
     name: 'Coronavirus',
     components: {
       appBar: Appbar,
       default: Coronavirus,
+    },
+  },
+  {
+    path: '/portifolio-suprime',
+    name: 'Suprime',
+    components: {
+      appBar: Appbar,
+      default: Suprime,
+    },
+  },
+  {
+    path: '/portifolio-bela-arina',
+    name: 'Belarina',
+    components: {
+      appBar: Appbar,
+      default: Belarina,
     },
   },
   {

@@ -74,7 +74,7 @@
               solo
               flat
               height="210"
-              label="Mensagem"
+              label="Conte como posso te ajudar"
             ></v-textarea>
           </v-col>
           <v-col class="pt-0 mt-0 pb-10" cols="12">
@@ -149,11 +149,9 @@ export default {
   height: 43px !important;
   text-transform: none !important;
 }
-.v-input {
-  border: 2px solid transparent;
-}
+
 .v-input--is-focused {
-  border: 2px solid #fab013 !important;
+  box-shadow: 0 0 0 3px #fab013;
 }
 
 /* mobile */

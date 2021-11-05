@@ -13,7 +13,7 @@
             <v-col cols="12" class="pt-0 pl-0">
               <div class="font-title" style="max-width: 345px">
                 Experimente <br />
-                um atentimento ainda mais eficiente. Só chamar a gente no
+                um atendimento ainda mais eficiente. Só chamar a gente no
                 Whatsapp
               </div>
 
@@ -30,8 +30,10 @@
               </v-btn>
 
               <div class="subtitle">
-                Ou se preferir +55 21 98156-4128. <br />
-                Número exclusivo para atendimento.
+                (21) 98156-4128 <br />
+                <span class="font-weight-regular">
+                  Número exclusivo para atendimento.</span
+                >
               </div>
               <div class="icons">
                 <a
@@ -44,17 +46,11 @@
                 <a
                   class="social-media-icon"
                   target="_blank"
-                  href="https://www.facebook.com/paulovitordesign"
+                  href="https://www.facebook.com/paulovitordesigner1"
                 >
                   <i class="fab fa-facebook-f"></i
                 ></a>
-                <a
-                  class="social-media-icon"
-                  target="_blank"
-                  href="https://www.behance.net/paulovitordesigner"
-                >
-                  <i class="fab fa-behance"></i>
-                </a>
+
                 <a
                   class="social-media-icon"
                   target="_blank"
@@ -115,16 +111,20 @@ export default {
 }
 
 .subtitle {
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
   padding-top: 50px;
   padding-bottom: 103px;
 }
+.subtitle span {
+  font-size: 14px;
+}
 i {
-  padding-right: 30px;
+  padding-right: 37px;
 }
 i:hover {
-  transform: scale(1.5);
+  color: #fab013;
 }
 
 /* mobile */
@@ -185,11 +185,10 @@ i:hover {
   }
   .subtitle {
     padding-left: 20px;
-    padding-bottom: 50px;
   }
 
   .icons {
-    padding-bottom: 20px;
+    margin-top: 24px !important;
     padding-left: 20px;
   }
   i {
