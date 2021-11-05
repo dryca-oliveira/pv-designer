@@ -3,22 +3,27 @@
     <v-row justify="center">
       <v-img lazy-src="@/media/imo/img1.png" src="@/media/imo/img1.png">
       </v-img>
-      <v-col cols="10" class="texto">
-        <div style="max-width: 80%">
-          <h2 class="mb-7">IMO Residencial</h2>
-          <p class="font-italic">
-            IMO Residencial is a startup of residential projects and
-            construction, aiming the maximum care for families and quality
-            delivery. Its important points are transparency and clarity.
-          </p>
+      <v-container style="max-width: 1150px">
+        <v-row class="px-4 px-lg-0">
+          <v-col cols="12" class="texto px-lg-0">
+            <div style="max-width: 875px">
+              <h2 class="mb-7">IMO Residencial</h2>
+              <p class="font-italic">
+                IMO Residencial is a startup of residential projects and
+                construction, aiming the maximum care for families and quality
+                delivery. Its important points are transparency and clarity.
+              </p>
 
-          <p class="pt-4">
-            IMO Residencial é uma startup de projetos e construção residencial,
-            visando o máximo de cuidado com as famílias e entrega de qualidade.
-            Tem como pontos importantes transparência e clareza.
-          </p>
-        </div>
-      </v-col>
+              <p class="pt-4">
+                IMO Residencial é uma startup de projetos e construção
+                residencial, visando o máximo de cuidado com as famílias e
+                entrega de qualidade. Tem como pontos importantes transparência
+                e clareza.
+              </p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
       <v-img src="@/media/imo/img2.png"> </v-img>
       <v-img src="@/media/imo/img3.png"> </v-img>
       <v-img src="@/media/imo/img4.png"> </v-img>
@@ -54,7 +59,7 @@ h2 {
 }
 @media screen and (max-width: 600px) {
   .texto {
-    margin-top: 40px;
+    padding-top: 40px;
     margin-bottom: 40px;
   }
   p {

@@ -1,17 +1,25 @@
 <template>
   <v-container class="pa-0" fluid>
     <v-row justify="center">
-      <v-img src="@/media/belarina/img1.png"> </v-img>
-      <v-col cols="10" class="texto">
-        <div style="max-width: 80%">
-          <h2 class="mb-7">Bela Arina Pousada & Hostel - SP.</h2>
-          <p>
-            Desde o início tivemos o cuidado de criar uma marca que transmitisse
-            a sensação de lar e conforto. Usamos cores vivas, mas, mantendo
-            sempre um design clean.
-          </p>
-        </div>
-      </v-col>
+      <v-img
+        lazy-src="@/media/belarina/img1.png"
+        src="@/media/belarina/img1.png"
+      >
+      </v-img>
+      <v-container style="max-width: 1150px">
+        <v-row>
+          <v-col cols="10" class="texto">
+            <div>
+              <h2 class="mb-7">Bela Arina Pousada & Hostel - SP.</h2>
+              <p>
+                Desde o início tivemos o cuidado de criar uma marca que
+                transmitisse a sensação de lar e conforto. Usamos cores vivas,
+                mas, mantendo sempre um design clean.
+              </p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
       <v-img src="@/media/belarina/img2.png"> </v-img>
       <v-img src="@/media/belarina/img3.png"> </v-img>
 

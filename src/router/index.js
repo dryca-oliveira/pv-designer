@@ -48,7 +48,10 @@ const routes = [
   {
     path: '/portifolio-imo',
     name: 'Imo',
-    component: Imo
+    components: {
+      appBar: Appbar,
+      default: Imo,
+    },
   },
   {
     path: '/portifolio-bojack',
