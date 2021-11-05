@@ -37,7 +37,7 @@
 
                   <div v-if="item.btn">
                     <v-btn
-                      to="/em-breve"
+                      to="#projetos"
                       dark
                       color="#1f22fd"
                       class="bannerBtn font-weight-bold"

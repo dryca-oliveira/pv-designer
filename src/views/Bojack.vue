@@ -12,6 +12,11 @@
     </v-row>
     <v-row>
       <v-col class="pa-0">
+        <v-img src="@/media/bojack/img1-2.png"></v-img>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col class="pa-0">
         <v-img src="@/media/bojack/img2.png"></v-img>
       </v-col>
     </v-row>
