@@ -54,7 +54,7 @@
     </v-row>
     <v-row>
       <v-col class="pa-0">
-        <v-img src="@/media/bojack/img5.png"></v-img>
+        <v-img src="@/media/bojack/img5-1.png"></v-img>
       </v-col>
     </v-row>
 
@@ -65,7 +65,7 @@
     </v-row> -->
     <v-row>
       <v-col class="pa-0">
-        <v-img src="@/media/bojack/img8.png"></v-img>
+        <v-img src="@/media/bojack/img8-.png"></v-img>
       </v-col>
     </v-row>
     <Contact />
