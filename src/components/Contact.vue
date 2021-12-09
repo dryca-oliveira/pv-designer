@@ -26,7 +26,7 @@
               >
                 <v-icon class="pr-2"> fab fa-whatsapp </v-icon>
 
-                Solicite seu orçamaneto
+                Solicite seu orçamento
               </v-btn>
 
               <div class="subtitle">
